@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="http://aori.mx/img/favicon.png" type="image/png">
+	<title>Aori | Solicitud</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src='js/addCaracteristica.js'></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.debug.js"></script>
+	<script src='js/pdfGenerator.js'></script>
+
+	<link rel="stylesheet" href="css/estiloFormulario.css">
+
+</head>
+<body>
+	<header>
+		<hr class="style15">
+	</header>
+
+	<section id="section1">
+		<ul id="tittle">
+			<li id="liTittle">
+				Has olvidado el nombre del futuro cliente
+			</li>
+		</ul>
+		<form id="formulario" method="post" action="http://localhost/cotizador/app/solicitudes/solicitud.php">
+			<label class="label" for="nombre">¿A quién va dirijido?</label>
+			<input class="input" id="inNombre" name="inNombre" type="text" value="" required>
+
+			<label class="label" for="empresa">¿Cuál es el nombre de su empresa?</label>
+			<input class="input" id="empresa" name="inEmpresa" type="text" value="" require>
+
+			<label class="label" for="correo">¿Cuál es su correo electronico?</label>
+			<input class="input" id="correo" name="inEmail" type="email" value="" required>
+
+			<label class="label" for="telefono">¿Cuál es su telefono?</label>
+			<input class="input" id="telefono" name="inTel" type="tel" value="" pattern="[0-9]{10}" title="Este campo debe contener solamente 10 digitos" required>
+
+			<label class="label" for="numero">¿En qué tipo de proyecto está interesado</label>
+			<select class="input">
+				<option>Landing page</option>
+				<option>Pagina con blog</option>
+				<option>Tienda en linea</option>
+			</select>
+
+			<label id="labelCarac" for="correo">Características a agregar en la presentación</label>
+
+			<label class="labelCB"><input type="checkbox" name="" value="">&nbsp; Not Selected</label>
+			<label class="labelCB"><input type="checkbox" name="" value="">&nbsp; Slected</label>
+			<label class="labelCB"><input type="checkbox" name="" value="">&nbsp; Indeterminate</label>
+			<label class="labelCB"><input type="checkbox" name="" value="">&nbsp; Disabled</label>
+			<label class="labelCB"><input type="checkbox" name="" value="">&nbsp; Disabled Selected</label>
+
+			<ul id="todo-list" class="todo-list">
+			</ul>
+			
+			<label id="lbCarac">Agregar nueva caracteristica</label>
+			<input id="newItem" class="newItem" type="text" name="">
+			<input id="addItem" class="addItem" type="button" name="" value="+" color="white">
+
+			
+			
+			<input id="btnEnviar" type="submit" value="Enviar" name="">
+		</form>
+		
+	</section>
+
+	
+	
+</body>
+</html>

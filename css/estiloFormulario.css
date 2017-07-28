@@ -1,0 +1,365 @@
+*{
+	margin: 0;
+	border:0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url("../imgCotizador/Type/Montserrat-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../imgCotizador/Type/Montserrat-Regular.ttf") format("truetype");
+
+}
+
+@font-face {
+  font-family: 'Montserrat-el';
+  src: url("../imgCotizador/Type/Montserrat-ExtraLight.ttf") format("truetype");
+
+}
+
+@font-face {
+  font-family: 'Montserrat-li';
+  src: url("../imgCotizador/Type/Montserrat-Light.ttf") format("truetype");
+
+}
+
+body{
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	padding: 0;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+/*----------Header -----------*/
+header{
+	max-width: 1232px;
+	width: 100%;
+	height: 160px;
+
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-flex-direction: column;  /*direccion del acomodo de las cajas*/
+	-ms-flex-direction: column;
+	flex-direction: column;
+
+	-webkit-flex-wrap:nowrap;
+	-ms-flex-wrap:nowrap;
+	flex-wrap: nowrap;
+
+	-webkit-justify-content:center; 
+	-ms-flex-pack:center;
+	justify-content: center;
+
+	-webkit-align-items: center; /*alinea los elementos al centro de contenedor*/
+	-ms-flex-align: center; 
+	align-items: center; 
+}
+
+hr.style15 {
+	margin-top: 40px;
+	width: 100%;
+	border-top: 2px solid orange;
+	text-align: center;
+}
+
+hr.style15:after {
+	position: relative;
+	top: -24px;
+	content: 'Cotización';
+	padding: 0 56px;
+	background: white;
+	color: orange;
+	font-size: 40px;
+	font-family: Montserrat;
+}
+
+/*-------------Section1--------------*/
+#section1{
+	max-width: 1232px;
+	width: 100%;
+	height: 100%;
+
+	
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-flex-direction: column;  /*direccion del acomodo de las cajas*/
+	-ms-flex-direction: column;
+	flex-direction: column;
+
+	-webkit-flex-wrap:nowrap;
+	-ms-flex-wrap:nowrap;
+	flex-wrap: nowrap;
+
+	-webkit-justify-content:flex-start; 
+	-ms-flex-pack:flex-start;
+	justify-content: flex-start;
+
+	-webkit-align-items: center; /*alinea los elementos al centro de contenedor*/
+	-ms-flex-align: center; 
+	align-items: center; 
+}
+
+
+
+#tittle{
+	display: flex;
+	list-style: none;
+
+}
+
+#liTittle{
+	width: 944px;
+	height: 100%;
+	background: red;
+	text-decoration: none;
+	text-align: center;
+	line-height: 40px;	
+	font-family: Montserrat;
+	font-size: 16px;
+	color: white;
+}
+
+#formulario{
+	margin-top: 40px;
+	width: 944px;
+	height: 100%;
+
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-flex-direction: column;  /*direccion del acomodo de las cajas*/
+	-ms-flex-direction: column;
+	flex-direction: column;
+
+	-webkit-flex-wrap:nowrap;
+	-ms-flex-wrap:nowrap;
+	flex-wrap: nowrap;
+
+	-webkit-justify-content:flex-start; 
+	-ms-flex-pack:flex-start;
+	justify-content: flex-start;
+
+	-webkit-align-items: flex-start; /*alinea los elementos al centro de contenedor*/
+	-ms-flex-align: flex-start; 
+	align-items: flex-start; 
+
+	font-family: Montserrat;
+	/*border: 2px solid yellow;*/
+}
+
+.label{
+	width: 100%;
+	height: 100%;
+	
+}
+
+.input{
+	width: 100%;
+	height: 40px;
+	border: 2px solid black;
+	padding-left: 16px;
+	padding-right: 16px;
+	margin-bottom: 8px;
+	color: black;
+	font-family: Montserrat;
+}
+
+.labelCB{
+	
+	width: 100%;
+	height: 100%;
+}
+
+#labelCarac{
+	width: 100%;
+	height: 100%;
+	margin-top: 32px;
+	margin-bottom: 8px;
+}
+
+#addItem{
+	margin-top: 8px;
+	margin-bottom: 16px;
+	border-radius: 100%;
+	width: 24px;
+	height: 24px;
+	line-height: 4px;
+	background: orange ;
+	color: white;
+	font-family: Montserrat;
+	font-size: 24px;
+	text-align: center;
+}
+
+#newItem{
+	margin-top: 8px;
+	width: 100%;
+	height: 32px;
+	border: 2px solid black;
+	padding-left: 16px;
+	padding-right: 16px;
+	color: black;
+	font-family: Montserrat;
+}
+
+#lbCarac{
+	margin-top: 16px;
+}
+
+#btnEnviar{
+	margin-top: 56px;
+	margin-bottom: 64px;
+	padding-top: 8px;
+	padding-bottom: 6px;
+	align-self: center;
+	width: 488px;
+	height: auto;
+	background: white;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 40px;
+	border: 2px solid orange;	
+	border-radius: 25px 25px 25px 25px;
+	cursor: pointer;
+	font-family: Montserrat-li;
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	color: orange;
+
+}
+
+.strike {
+  text-decoration: none;
+}
+
+.todo-item-done{
+	margin-bottom: 8px;
+}
+
+.todo-item-delete{
+	padding: 0;
+	border-radius: 100%;
+	width: 16px;
+	height: 16px;
+	background: red ;
+	color: white;
+	font-family: Montserrat;
+	line-height: 4px;
+	font-size: 16px;
+	text-align: center;
+}
+
+/*=============================================
+PANTALLA DE PHONES - EXTRA SMALL (xs)
+=============================================*/
+@media(max-width:767px){
+
+	
+	#section1{
+		width: 100%;
+			}
+	#formulario{
+		width: 75%;
+	}
+	#tittle{
+		width: 80%;
+	}
+
+	#liTittle{
+		width: 100%;
+	}
+	#btnEnviar{
+		width: 100%;
+		margin-top: 40px;
+		
+		font-size: 18px;
+	}
+
+}
+
+/*=============================================
+PANTALLA DE TABLET - SMALL (sm) 
+=============================================*/
+
+@media(max-width:1000px) and (min-width:768px){
+	#logo-container{
+		max-width: 769px;
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+
+	#logo{
+		margin-left: 16px;
+	}
+	nav{
+		width: auto;
+		margin-right: 24px;
+	}
+	ul li{
+		font-size:18px;	
+	}
+
+	#contacto{
+		font-size:18px;
+	}
+
+	.textHeader{
+		text-decoration: none;
+		font-size: 32px;
+	}
+
+	#btnSolicitar{
+		line-height: 35px;
+		width: 344px;
+		height: 40px;
+		font-size: 18px;
+		
+	}
+
+	header{
+		height:464px;
+	}
+	header{
+		height: 160px;
+	}
+	#section1{
+		width: 100%;
+			}
+	#formulario{
+		width: 75%;
+	}
+	#tittle{
+		width: 80%;
+	}
+
+	#liTittle{
+		width: 100%;
+	}
+	#btnEnviar{
+		width: 100%;
+		margin-top: 40px;
+		
+		font-size: 18px;
+	}
+}
+

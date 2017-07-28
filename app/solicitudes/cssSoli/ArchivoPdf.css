@@ -1,0 +1,133 @@
+*{
+	margin: 0;
+	border:0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url("../imgCotizador/Type/Montserrat-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../imgCotizador/Type/Montserrat-Regular.ttf") format("truetype");
+
+}
+
+@font-face {
+  font-family: 'Montserrat-el';
+  src: url("../imgCotizador/Type/Montserrat-ExtraLight.ttf") format("truetype");
+
+}
+
+@font-face {
+  font-family: 'Montserrat-li';
+  src: url("../imgCotizador/Type/Montserrat-Light.ttf") format("truetype");
+
+
+}
+
+
+body{
+	height: auto;
+	
+}
+
+header{
+	width: 712px;
+	height: 104px;
+	margin-top: 40px;
+	margin-right: 40px;
+	margin-left: 40px;
+	border: 1px solid blue;
+}
+
+#logo{
+	float: right;
+	
+}
+
+.grayscale {
+	-webkit-filter: invert(100%); 
+	filter: invert(100%);
+}
+
+
+/*-----------------Solicitud--------------------*/
+#divSolicitud{
+	width: 712px;
+	height: 880px;
+	border: 1px solid black;
+	margin-left: 40px;
+	margin-top: 24px;S
+}
+
+
+
+/*--------------------Footer-----------------*/
+footer{
+	bottom: 0px;
+	overflow: hidden;
+	width: 1008px;
+	border: 1px solid red;
+	
+}
+
+#boxDirection{
+	display: block;
+	float: left;
+	border: 1px solid yellow;
+	width: 388px;
+	height: 96px;
+}
+
+#line{
+	
+	float: left;
+	width: 56px;
+	
+}
+ 
+ .linehr{
+	width: 56px;
+	color: orange;
+	border-top: 2px solid orange;
+ }
+
+ #txtDirection{
+ 	border: 2px solid green;
+ 	display: block;
+	float: right;
+	width: 312px;
+	padding: 0px;
+	
+ }
+
+ .pDir{
+ 	padding: 0;
+ 	margin: 0;
+ 	color: gray;
+ }
+
+#correo{
+	float: right;
+	width: 312px;
+	height: auto;
+	background: gray;
+	border: 1px solid magenta;
+	
+}
+
+#pCorreo{
+	
+	margin: 0;
+	color: white;
+	background: gray;
+	font-size: 20px;
+	padding-top: 8px;
+	padding-bottom: 6px;
+	
+}

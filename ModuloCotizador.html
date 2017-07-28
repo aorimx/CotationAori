@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="http://aori.mx/img/favicon.png" type="image/png">
+	<title>Aori | Cotizador</title>
+
+	<link rel="stylesheet" href="css/estilos.css">
+
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src='js/main.js'></script>
+
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+	
+
+	<!--scroll-->
+	<script src="js/smooth-scroll.min.js"></script>
+	<script>
+		smoothScroll.init({
+		selector: '[data-scroll]', // nombre
+		selectorHeader: null, // Fixed header selector (must use a valid CSS selector)
+		speed: 1000, // velocidad de llegada
+		easing:'easeInOutCubic',
+		offset: 0, // Distancia de pixeles abajo
+		callback: function (anchor, toggle) {} // Callback to run after setting active link
+});
+	</script>
+</head>
+
+
+<body>	
+			<div class="sidebar">
+				<h2>MENU</h2>
+				<ul>
+					<li><a href="http://aori.mx/es">Inicio</a></li>
+					<li><a href="http://aori.mx/es/servicios">Servicios</a></li>
+					<li><a href="http://aori.mx/es/nosotros">Nosotros</a></li>
+					<li><a href="http://aori.mx/es/contacto">Contacto</a></li>
+				</ul>
+			</div>		
+
+<!--inicio del header-->
+	<header class="headerM">
+		<div class="logo-container">
+					<!--burger menu-->
+
+					<a id="logoCont" href="http://aori.mx">
+						<img id="logo" src="imgCotizador/Recursos_programación/LOGO.png">
+					</a>
+					<img src="imgCotizador/Recursos_programación/menu.png" alt="" class="menu-bar">
+					<script src="js/menu.js"></script>
+
+					<!--barra de nav-->
+					<nav id="menu-web">
+						<ul class="menuBanner">
+							<li class="listMenu">
+								<a class="aBanner" href="http://aori.mx/es">Inicio</a>
+								
+							</li>
+							<li class="listMenu">
+								|
+							</li>
+							<li class="listMenu">
+								<a class="aBanner" href="http://aori.mx/es/servicios">Servicios</a>
+								
+							</li>
+							<li class="listMenu">
+								|
+							</li>
+							<li class="listMenu">
+								<a class="aBanner" href="http://aori.mx/es/nosotros">Nosotros</a>
+							</li>
+							<li class="listMenu">
+								|
+							</li class="listMenu">
+							<li id="contacto" class="listMenu abrir">
+								<a class="aBanner" href="http://aori.mx/es/contacto">Contacto</a>
+							</li>
+						</ul>
+					</nav>
+				<!--Fin barra de nav-->
+		</div>
+
+		<div id="txtHeaderAnuncio">
+			<div class="textHeader">
+					<p id="line1">Tu página web al mejor precio</p>
+					<p id="line2">con los expertos</p>
+			</div>
+				<ul id="btnSoli">
+					<li id="btnSolicitar">
+						<a id="btnSolicitud" data-scroll href="#section3">SOLICITA UNA COTIZACIÓN</a>
+					</li>
+				</ul>
+		</div>
+	</header>
+
+	<!--fin del header-->
+
+	
+
+	<!--inicio de la parte superior-->
+	<section id="section1">
+		<div class="beneficios">
+			<center>
+				<img src="imgCotizador/Recursos_programación/Target icon.png" class="imagenes">
+				<h1 class="titulo">Personalizado</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh eiusmod</p>
+			</center>
+		</div>
+
+		<div class="beneficios">
+			<center>
+				<img src="imgCotizador/Recursos_programación/Airplane icon.png" class="imagenes">
+				<h1 class="titulo">Rápido</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh eiusmod</p>
+			</center>
+		</div>
+		
+		<div class="beneficios">
+			<center>
+				<img src="imgCotizador/Recursos_programación/Professional icon.png" class="imagenes">
+				<h1 class="titulo">Profesional</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh eiusmod</p>
+			</center>
+		</div>
+		
+		<div class="beneficios">
+			<center>
+				<img src="imgCotizador/Recursos_programación/Money icon.png" class="imagenes">
+				<h1 class="titulo">Buen precio</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh eiusmod</p>
+			</center>
+		</div>			
+	</section>
+	<!--fin de la parte superior-->
+
+	<hr class="style1">
+
+	<!--inicio de la seccion 2-->
+	<section id="section2">
+		<div class="bgProductos" id="bgProducto1">
+			<div id="producto1">
+					<h2 class="productosXs">Landing page</h2>
+					<p class="productosXs">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						<ul>
+							<li>
+								<a class="btnCotizacion" id="btnCotizar1" data-scroll href="#section3">COTIZAR
+								</a>
+							</li>
+						</ul>
+			</div>
+		</div>
+
+		<div class="bgProductos" id="bgProducto2">
+			<div id="producto2">
+					<h2 class="productosXs">Pagina con blog</h2>
+					<p class="productosXs">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+					
+						<ul>
+							<li>
+								<a class="btnCotizacion" id="btnCotizar2" data-scroll href="#section3">
+									COTIZAR
+								</a>
+							</li>
+						</ul>
+			
+			</div>
+		</div>
+		
+		<div class="bgProductos" id="bgProducto3">
+			<div id="producto3">
+					<h2 class="productosXs">Tienda en linea</h2>
+					<p class="productosXs">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						<ul>
+							<li>
+								<a class="btnCotizacion" id="btnCotizar3" data-scroll href="#section3">
+									COTIZAR
+								</a>
+							</li>
+						</ul>
+			</div>
+		</div>
+	</section>
+
+	<!--Fin de la seccion 2-->
+
+	<hr class="style2">
+	
+	<!--inicio de la seccion 3 Formulario-->
+	<section id="section3">
+		<form id="formulario">
+			<label class="label" for="nombre">¿Cuál es tu nombre?</label>
+			<input class="input" id="inNombre" type="text" value="" required>
+
+			<label class="label" for="empresa">¿Cuál es el nombre de tu empresa?</label>
+			<input class="input" id="empresa" type="text" value="" require>
+
+			<label class="label" for="correo">¿Cuál es tu correo electronico?</label>
+			<input class="input" id="correo" type="email" value="" required>
+
+			<label class="label" for="telefono">¿Cuál es tu telefono?</label>
+			<input class="input" id="telefono" type="tel" value="" pattern="[0-9]{10}" title="Este campo debe contener solamente 10 digitos" required>
+
+			<label class="label" for="numero">Elije que tipo de proyecto estas interesado</label>
+			<select class="input">
+				<option>Landing page</option>
+				<option>Pagina con blog</option>
+				<option>Tienda en linea</option>
+			</select>
+
+			<input id="btnEnviar" type="submit" value="ENVIAR" name="">
+		</form>
+
+		<div id="box2">
+			<div id="anuncio">Obtén resultados mejorando la cantidad de personas que encuentran tu negocio en linea
+			</div>
+			<hr class="style3">
+			<div id="clientes">
+				<div id="txtClientes">Algunos de nuestros clientes
+				</div>
+				<div id="clientesImg">
+					<img src="imgCotizador/Recursos_programación/Look me app.png" id="imgLook">
+					<img src="imgCotizador/Recursos_programación/suenan_todos.png" class="imgClientes">
+					<img src="imgCotizador/Recursos_programación/Dr juan riestra.png" class="imgClientes">
+					<img src="imgCotizador/Recursos_programación/Radical Nutrition.png" id="imgRadical">
+					<!-- <img src="imgCotizador/Recursos_programación/Intermed.png" id="imgInter"> -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--Fin de la seccion 3-->
+
+
+	<!--inicio de pie de pagina-->
+	<footer>
+		<div id="redes">
+			<img src="imgCotizador/Recursos_programación/Fb.png" class="imgPie" id="fb">
+			<img src="imgCotizador/Recursos_programación/Behance.png" class="imgPie" id="bh">
+			<img src="imgCotizador/Recursos_programación/instagram.png" class="imgPie" id="inst">
+		</div>
+		<div id="copy">
+			<div id="txtCopy">Copyright &copy; AORI. &nbsp; &nbsp;Todos los Derechos Reservados.</div>
+			<div id="aviso">Aviso de privacidad</div>
+		</div>
+		<div id="footerLogo">
+			<img src="imgCotizador/Recursos_programación/Logo_black.png" id="imgAori">
+		</div>
+	</footer>
+	<!--fin de pie de pagina-->
+
+
+	<!--jQuery para el scroll de la cotizacion-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	
+
+</body>
+</html>

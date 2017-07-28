@@ -1,0 +1,1774 @@
+*{
+	margin: 0;
+	border:0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url("../imgCotizador/Type/Montserrat-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../imgCotizador/Type/Montserrat-Regular.ttf") format("truetype");
+
+}
+
+@font-face {
+  font-family: 'Montserrat-el';
+  src: url("../imgCotizador/Type/Montserrat-ExtraLight.ttf") format("truetype");
+
+}
+
+@font-face {
+  font-family: 'Montserrat-li';
+  src: url("../imgCotizador/Type/Montserrat-Light.ttf") format("truetype");
+
+
+}
+
+body{
+	margin: 0;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+/*=============================================
+                    Burger Menu
+=============================================*/
+.sidebar{
+	display: none;
+}
+.menu-bar{
+	display: none;
+}
+
+
+/*=============================================
+                    HEADER
+=============================================*/
+
+.headerM{
+	
+	width: 100%;
+	height: 544px;
+	
+	background-image: url(../imgCotizador/Fotos/Image_header.png);
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-flex-direction: column;  /*direccion del acomodo de las cajas*/
+	-ms-flex-direction: column;
+	flex-direction: column;
+
+	-webkit-flex-wrap:nowrap;
+	-ms-flex-wrap:nowrap;
+	flex-wrap: nowrap;
+
+	-webkit-justify-content:space-between; 
+	-ms-flex-pack:space-between;
+	justify-content: space-between;
+
+	-webkit-align-items: center; /*alinea los elementos al centro de contenedor*/
+	-ms-flex-align: center; 
+	align-items: center; 
+}
+
+.logo-container{
+	max-width: 1232px;
+	width: 100%;
+	height: 160px;
+	padding-left: 56px;
+	padding-right: 56px;
+	
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-flex-direction: row;  /*direccion del acomodo de las cajas*/
+	-ms-flex-direction: row;
+	flex-direction: row;
+
+	-webkit-flex-wrap:nowrap;
+	-ms-flex-wrap:nowrap;
+	flex-wrap: nowrap;
+
+	-webkit-justify-content:space-between; 
+	-ms-flex-pack:space-between;
+	justify-content: space-between;
+
+	-webkit-align-items: center; /*alinea los elementos al centro de contenedor*/
+	-ms-flex-align: center; 
+	align-items: center; 
+}
+
+#logoCont{
+	width: 100%;
+	flex:1 1 auto;
+	margin-top: 8px;
+	
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-flex-direction: row;  /*direccion del acomodo de las cajas*/
+	-ms-flex-direction: row;
+	flex-direction: row;
+
+	-webkit-flex-wrap:nowrap;
+	-ms-flex-wrap:nowrap;
+	flex-wrap: nowrap;
+
+	-webkit-justify-content:space-between; 
+	-ms-flex-pack:space-between;
+	justify-content: space-between;
+
+	-webkit-align-items: center; /*alinea los elementos al centro de contenedor*/
+	-ms-flex-align: center; 
+	align-items: center;
+	
+}
+
+#logo{
+	width: 152px;
+	height: 48px;
+}
+
+#menu-web{
+	width: 100%;
+	display: flex;
+	
+	margin-top: 8px;
+	
+	font-family: Montserrat;
+	text-transform: uppercase;
+
+	-webkit-flex-direction: row;  /*direccion del acomodo de las cajas*/
+	-ms-flex-direction: row;
+	flex-direction: row;
+
+	-webkit-flex-wrap:nowrap;
+	-ms-flex-wrap:nowrap;
+	flex-wrap: nowrap;
+
+	-webkit-justify-content:flex-end; 
+	-ms-flex-pack:flex-end;
+	justify-content: flex-end;
+
+	-webkit-align-items: center; /*alinea los elementos al centro de contenedor*/
+	-ms-flex-align: center; 
+	align-items: center; 
+	
+	-webkit-transition: margin-left .5s;
+	
+}
+
+.menuBanner{
+	display: flex;
+	list-style: none;
+	font-family: Montserrat;
+	font-size: 20px;
+
+}
+
+.listMenu{
+	
+	color: white;
+	margin: 8px;
+}
+
+#contacto{
+	color: white;
+	margin-right: 0px;
+    margin-left: 8px;
+    font-size: 20px;
+	
+}
+
+.aBanner{
+	color: white;
+	text-decoration: none;
+    
+    
+}
+
+.aBanner:hover{
+	color: #DDB446;	
+}
+
+
+#txtHeaderAnuncio{
+	max-width: 1232px;
+	width: 100%;
+	height: 384px;
+	flex:1 1 auto;
+
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-flex-direction: column;  /*direccion del acomodo de las cajas*/
+	-ms-flex-direction: column;
+	flex-direction: column;
+
+	-webkit-flex-wrap:nowrap;
+	-ms-flex-wrap:nowrap;
+	flex-wrap: nowrap;
+
+	-webkit-justify-content:space-between; 
+	-ms-flex-pack:space-between;
+	justify-content: space-between;
+
+	-webkit-align-items: center; /*alinea los elementos al centro de contenedor*/
+	-ms-flex-align: center; 
+	align-items: center; 
+}
+
+.textHeader{
+	flex:1 1 auto;
+	margin-top: 40px;
+	
+	height: 120px;
+	text-decoration: none;
+	text-align: center;	
+	font-size: 48px;
+	
+}
+
+#line1{
+	flex:1 1 auto;
+	text-transform: uppercase;
+	font-family: Montserrat;
+	color: white;
+}
+
+#line2{
+	flex:1 1 auto;
+	text-transform: uppercase;
+	font-family: Montserrat-el;
+	color: rgba(255,255,255,1);
+}
+ 
+#btnSolicitud{
+ 	text-decoration: none;
+ 	color: white;
+ }
+
+#btnSolicitar{
+	flex:1 1 auto;
+	margin-bottom: 96px;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 8px;
+	padding-bottom: 6px;
+	background: #1D6C67;
+	text-decoration: none;
+	text-align: center;
+	line-height: 40px;
+		
+	border-radius: 25px 25px 25px 25px;
+	cursor: pointer;
+	font-family: Montserrat;
+	font-size: 24px;
+	color: white;
+	transition: all 250ms ease-in-out;
+
+}
+
+#btnSolicitar:hover{
+	background:  #DDB446;
+}
+
+/*=============================================
+PANTALLA DE PHONES - EXTRA SMALL (xs)
+=============================================*/
+@media(max-width:767px){
+
+	.headerM{
+		z-index: 1;
+		width: 100%;
+		height:344px;
+		transition: all 0.5s;
+		
+	}
+
+	body{
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+
+	#menu-web{
+		display: none;
+	}
+
+	.sidebar{
+		display: block;
+		align-self: flex-end;
+		position: absolute;
+		width: 176px;
+		height: 344px;
+		background: white;
+		border:1px solid orange;
+		color: orange;
+	}
+	.sidebar h2{
+		font-family: Montserrat;
+		text-align: center;
+		margin: 0;
+		padding: 8px;
+		background: #fffaf0; 
+	}
+
+	.sidebar ul{
+		text-align: center;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		font-family: Montserrat;
+	}
+
+	.sidebar li{
+		outline: 1px solid #fffaf0;
+		transition: all 1.4s;
+	}
+
+	.sidebar li:hover{
+		background: orange;
+		color: white;
+	}
+
+	.sidebar a{
+		display: block;
+		padding: 8px;
+		color: orange;
+		text-decoration: none;
+	}
+	
+	
+	.menu-bar{
+		display: block;
+		max-width: 40px;
+		max-height: 40px;
+		cursor: pointer;
+		margin-left: 0px;
+		margin-right: 16px;
+		
+	}
+
+	.abrir{
+		transform: translate(-176px);
+	}
+
+
+	.logo-container{
+		transition: all 0.4s;
+		padding: 0px;
+		width: 100%;
+		height: 180px;
+		margin-left: 0px;	
+	}
+
+	#logoCont{
+		
+		-webkit-justify-content:flex-start; 
+		-ms-flex-pack:flex-start;
+		justify-content: flex-start;
+		margin-left: 16px;
+		margin-top: 0px;
+		
+	}
+
+	#txtHeaderAnuncio{
+
+		-webkit-justify-content:center; 
+		-ms-flex-pack:center;
+		justify-content: flex-start; 
+	}
+		
+	.textHeader{
+		flex: 0 0;
+		height: 88px;
+		margin-top: 8px;
+		margin-bottom: 16px;
+		text-decoration: none;
+		font-size: 24px;
+	}
+
+	#btnSolicitar{
+		margin-top: 24px;
+		margin-bottom: 0px;
+		line-height: 30px;
+		width: auto;
+		height: auto;
+		font-size: 16px;
+		
+	}
+
+	#btnSolicitar:active{
+		background:  #DDB446;
+	}
+
+}
+
+/*=============================================
+PANTALLA DE TABLET - SMALL (sm) 
+=============================================*/
+
+@media(max-width:1000px) and (min-width:768px){
+	#logo-container{
+		max-width: 769px;
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+
+	#logo{
+		margin-left: 16px;
+	}
+	#menu-web{
+		width: auto;
+		margin-left: 24px;
+		margin-right: 24px;
+	}
+	ul li{
+		font-size:18px;	
+	}
+
+	#contacto{
+		font-size:18px;
+	}
+
+	.textHeader{
+		text-decoration: none;
+		font-size: 32px;
+	}
+
+	#btnSolicitar{
+		line-height: 35px;
+		width: auto;
+		height: auto;
+		font-size: 18px;
+		
+	}
+
+	header{
+		height:464px;
+	}
+
+}
+
+
+/*=============================================
+                    Section1
+=============================================*/
+
+#section1{
+	max-width: 1232px;
+	width: 100%;
+	height: 488px;
+	background: #fff;
+	padding-right: 40px;
+	padding-left: 40px;
+	padding-top: 16px;
+	
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-flex-wrap:nowrap;
+	-ms-flex-wrap:nowrap;
+	flex-wrap: nowrap; /* si un elemento no cabe lo pone por debajo*/
+
+	-webkit-flex-direction: row;  /*direccion del acomodo de las cajas*/
+	-ms-flex-direction: row;
+	flex-direction: row;
+
+	-webkit-justify-content:center; 
+	-ms-flex-pack:center;
+	justify-content:center;
+
+	-webkit-align-items: center; /*alinea los elementos al centro de contenedor*/
+	-ms-flex-align: center; 
+	align-items: center; 
+}
+
+.imagenes{
+	width: 116px;
+	height: 116px;
+	margin-bottom: 16px;
+}
+
+.titulo{
+	margin-top: 8px;
+	margin-bottom: 24px;
+	color: 	#A0A0A0 ;
+	font-size: 18px;
+	font-family: Montserrat-li;
+	letter-spacing: 1px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.beneficios{
+	margin-left: 24px;
+	margin-right: 24px;
+	padding-left: 8px;
+	padding-right: 8px;
+	
+	width: 100%;
+	-webkit-flex-grow: 1; /*que tanto tiene que crecer para caber en el contenedor y el shrink es para encojer*/
+	-ms-flex-grow: 1; 
+	flex-grow: 1; 
+	-webkit-flex-shrink: 1;
+	-ms-flex-shrink: 1;
+	flex-shrink: 1;
+	color: black;
+	font-family: Montserrat;
+	font-size: 14px;
+	
+}
+
+/*=============================================
+PANTALLA DE PHONES - EXTRA SMALL (xs)
+=============================================*/
+@media(max-width:767px){
+	#section1{
+		-webkit-flex-direction: column;  /*direccion del acomodo de las cajas*/
+		-ms-flex-direction: column;
+		flex-direction: column;
+
+		-webkit-justify-content:center; 
+		-ms-flex-pack:center;
+		justify-content: center;
+		width: 100%;
+		height: 100%;
+	}
+
+	.beneficios{
+		margin-right: 0px;
+		margin-left: 0px;
+		margin-top: 16px;
+		margin-bottom: 24px;
+	}
+}
+
+/*=============================================
+PANTALLA DE TABLET - SMALL (sm) 
+=============================================*/
+
+@media(max-width:1000px) and (min-width:768px){
+	#section1{
+		height: 100%;
+		
+		-webkit-flex-wrap:wrap;
+		-ms-flex-wrap:wrap;
+		flex-wrap: wrap; /* si un elemento no cabe lo pone por debajo*/
+
+
+	}
+
+	.beneficios{
+		width: 40%;
+		
+		margin-bottom: 40px;
+		margin-top: 24px;
+	}
+}
+
+
+/*-----------------Linea divisora--------------------*/
+hr.style1 {
+	max-width: 1232px;
+	margin-top: 40px;
+	width: 100%;
+	border-top: 2px solid orange;
+	text-align: center;
+}
+
+hr.style1:after {
+	position: relative;
+	top: -24px;
+	content: 'NUESTROS PRODUCTOS';
+	padding: 0 56px;
+	background: white;
+	color: orange;
+	font-size: 24px;
+	font-family: Montserrat;
+}
+/*=============================================
+PANTALLA DE PHONES - EXTRA SMALL (xs)
+=============================================*/
+@media(max-width:767px){
+	hr.style1:after {
+		padding: 0 8px;
+		font-size: 20px;
+		top: -16px;
+	}
+}
+
+
+
+/*=============================================
+                    Section2
+=============================================*/
+ 
+#section2{
+	width: 100%;
+	height: 1192px;
+	background: #fff;
+	margin-top: 16px;
+	margin-bottom: 40px;
+
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-flex-wrap:nowrap;
+	-ms-flex-wrap:nowrap;
+	flex-wrap: nowrap; /* si un elemento no cabe lo pone por debajo*/
+
+	-webkit-flex-direction: column;  /*direccion del acomodo de las cajas*/
+	-ms-flex-direction: column;
+	flex-direction: column;
+
+	-webkit-justify-content:space-between; 
+	-ms-flex-pack:space-between;
+	justify-content:space-between;
+
+	-webkit-align-items: center; /*alinea los elementos al centro de contenedor*/
+	-ms-flex-align: center; 
+	align-items: center; 
+}
+
+.bgProductos{
+	width: 100%;
+	height: 400px;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-flex-wrap:nowrap;
+	-ms-flex-wrap:nowrap;
+	flex-wrap: nowrap; /* si un elemento no cabe lo pone por debajo*/
+
+	-webkit-flex-direction: column;  /*direccion del acomodo de las cajas*/
+	-ms-flex-direction: column;
+	flex-direction: column;
+
+	-webkit-justify-content:center; 
+	-ms-flex-pack:center;
+	justify-content:center;
+
+	-webkit-align-items: center; /*alinea los elementos al centro de contenedor*/
+	-ms-flex-align: center; 
+	align-items: center;
+}
+
+#bgProducto1{
+	background: url('../imgCotizador/Fotos/Paralax_tienda.png');
+	
+	background-repeat: no-repeat;/* no se repetira*/
+	background-size: 100% 100%; /*imagen 100% del ancho*/
+	background-attachment: fixed; /*posicion fija */
+}
+
+#producto1{
+	max-width: 1232px;
+	width: 100%;
+	height: 400px;
+
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-flex-wrap:nowrap;
+	-ms-flex-wrap:nowrap;
+	flex-wrap: nowrap; /* si un elemento no cabe lo pone por debajo*/
+
+	-webkit-flex-direction: column;  /*direccion del acomodo de las cajas*/
+	-ms-flex-direction: column;
+	flex-direction: column;
+
+	-webkit-justify-content:flex-start; 
+	-ms-flex-pack:flex-start;
+	justify-content:flex-start;
+
+	-webkit-align-items: flex-start; /*alinea los elementos al centro de contenedor*/
+	-ms-flex-align: flex-start; 
+	align-items: flex-start;
+}
+
+#producto1 h2{
+	margin-top: 64px;
+	margin-left: 64px;
+	font-family: Montserrat-el;
+	font-size: 28px;
+	color: white;
+}
+
+#producto1 p{
+	margin-left: 64px;
+	margin-top: 24px;
+	width: 424px;
+	color: white;
+	font-family: Montserrat-li;
+	font-size: 16px;
+}
+
+#producto1 ul li{
+	padding-top: 8px;
+	padding-bottom: 6px;
+	padding-left: 40px;
+	padding-right: 40px;
+	margin-left: 64px;
+	margin-top: 40px;
+	background: transparent;
+	text-align: center;
+	line-height: 40px;
+	border: 1.5px solid #fff;	
+	border-radius: 25px 25px 25px 25px;
+	cursor: pointer;
+	font-family: Montserrat-el;
+	font-weight: bold;
+	font-size: 18px;	
+	letter-spacing: 4px;
+	transition: all 250ms ease-in-out;
+}
+
+.btnCotizacion{
+	color: white;
+	text-decoration: none;
+}
+
+#producto1 ul li:hover{
+	background: #DDB446;
+	border: 1px solid #DDB446;
+}
+
+#bgProducto2{
+	background: url('../imgCotizador/Fotos/Paralax_landing.png');
+	
+	background-repeat: no-repeat;/* no se repetira*/
+	background-size: 100% 100%; /*imagen 100% del ancho*/
+	background-attachment: fixed; /*posicion fija */
+
+}
+
+#producto2{
+	max-width: 1232px;
+	width: 100%;
+	height: 400px;
+	
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-flex-wrap:nowrap;
+	-ms-flex-wrap:nowrap;
+	flex-wrap: nowrap; /* si un elemento no cabe lo pone por debajo*/
+
+	-webkit-flex-direction: column;  /*direccion del acomodo de las cajas*/
+	-ms-flex-direction: column;
+	flex-direction: column;
+
+	-webkit-justify-content:flex-start; 
+	-ms-flex-pack:flex-start;
+	justify-content:flex-start;
+
+	-webkit-align-items: flex-end; /*alinea los elementos al centro de contenedor*/
+	-ms-flex-align: flex-end; 
+	align-items: flex-end;
+}
+
+#producto2 h2{
+	margin-top: 64px;
+	margin-right: 64px;
+	font-family: Montserrat-el;
+	font-size: 28px;
+	color: white;
+}
+
+#producto2 p{
+	margin-right: 64px;
+	margin-top: 24px;
+	width: 424px;
+	color: white;
+	text-align: right;
+	font-family: Montserrat-li;
+	font-size: 16px;
+}
+
+#producto2 ul li{
+
+	padding-top: 8px;
+	padding-bottom: 6px;
+	padding-left: 40px;
+	padding-right: 40px;
+	margin-right:  64px;
+	margin-top: 40px;
+	background: transparent;
+	text-align: center;
+	line-height: 40px;
+	border: 1.5px solid #fff;	
+	border-radius: 25px 25px 25px 25px;
+	cursor: pointer;
+	font-family: Montserrat-el;
+	font-weight: bold;
+	font-size: 18px;
+	letter-spacing: 4px;
+	transition: all 250ms ease-in-out;
+}
+
+#producto2 ul li:hover{
+	background: #DDB446;
+	border:#DDB446;
+}
+
+#bgProducto3{
+	background: url('../imgCotizador/Fotos/Paralax_Blog.png');
+	
+	background-repeat: no-repeat;/* no se repetira*/
+	background-size: 100% 100%; /*imagen 100% del ancho*/
+	background-attachment: fixed; /*posicion fija */
+}
+
+#producto3{
+
+	max-width: 1232px;
+	width: 100%;
+	height: 400px;
+
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-flex-wrap:nowrap;
+	-ms-flex-wrap:nowrap;
+	flex-wrap: nowrap; /* si un elemento no cabe lo pone por debajo*/
+
+	-webkit-flex-direction: column;  /*direccion del acomodo de las cajas*/
+	-ms-flex-direction: column;
+	flex-direction: column;
+
+	-webkit-justify-content:flex-start; 
+	-ms-flex-pack:flex-start;
+	justify-content:flex-start;
+
+	-webkit-align-items: flex-start; /*alinea los elementos al centro de contenedor*/
+	-ms-flex-align: flex-start; 
+	align-items: flex-start;
+}
+
+#producto3 h2{
+	margin-top: 64px;
+	margin-left: 64px;
+	font-family: Montserrat-el;
+	font-size: 28px;
+	color: white;
+}
+
+#producto3 p{
+	margin-left: 64px;
+	margin-top: 24px;
+	width: 424px;
+	color: white;
+	font-family: Montserrat-li;
+	font-size: 16px;
+}
+
+#producto3 ul li{
+
+	padding-top: 8px;
+	padding-bottom: 6px;
+	padding-left: 40px;
+	padding-right: 40px;
+	margin-left: 64px;
+	margin-top: 40px;
+	background: transparent;
+	text-align: center;
+	line-height: 40px;
+	border: 1.5px solid #fff;	
+	border-radius: 25px 25px 25px 25px;
+	cursor: pointer;
+	font-family: Montserrat-el;
+	font-weight: bold;
+	font-size: 18px;
+	letter-spacing: 4px;
+	transition: all 250ms ease-in-out;
+}
+
+#producto3 ul li:hover{
+	background: #DDB446;
+}
+
+/*=============================================
+PANTALLA DE PHONES - EXTRA SMALL (xs)
+=============================================*/
+@media(max-width:767px){
+	#section2{
+		height: 100%;
+	}
+
+	#producto1{
+		-webkit-align-items: center; /*alinea los elementos al centro de contenedor*/
+		-ms-flex-align: center; 
+		align-items: center;
+	}
+
+	#producto1 h2{
+		padding-top: 48px;
+		margin:0;
+		margin-left: 0px;
+		text-align: center;
+		height: 16%;
+		width: 100%;
+		
+	}
+
+	#producto1 p{
+		margin-top: 40px;
+		text-align: center;
+		padding-right: 16px;
+		padding-left: 16px;
+		margin-left: 0;
+		margin-right: 0;
+		height: 48%;
+		width: 100%;
+	}
+
+	#producto1 ul li{
+		height: 100%;
+		margin:0;
+	}
+
+	#producto2{
+		-webkit-align-items: center; /*alinea los elementos al centro de contenedor*/
+		-ms-flex-align: center; 
+		align-items: center;
+	}
+
+	#producto2 h2{
+		padding-top: 48px;
+		margin:0;
+		margin-left: 0px;
+		text-align: center;
+		height: 16%;
+		width: 100%;
+		
+	}
+
+	#producto2 p{
+		margin-top: 40px;
+		text-align: center;
+		padding-right: 16px;
+		padding-left: 16px;
+		margin-left: 0;
+		margin-right: 0;
+		height: 48%;
+		width: 100%;
+	}
+
+	#producto2 ul li{
+		height: 100%;
+		margin:0;
+	}
+
+	#producto3{
+		-webkit-align-items: center; /*alinea los elementos al centro de contenedor*/
+		-ms-flex-align: center; 
+		align-items: center;
+	}
+
+	#producto3 h2{
+		padding-top: 48px;
+		margin:0;
+		margin-left: 0px;
+		text-align: center;
+		height: 16%;
+		width: 100%;
+		
+	}
+
+	#producto3 p{
+		margin-top: 40px;
+		text-align: center;
+		padding-right: 16px;
+		padding-left: 16px;
+		margin-left: 0;
+		margin-right: 0;
+		height: 48%;
+		width: 100%;
+	}
+
+	#producto3 ul li{
+		height: 100%;
+		margin:0;
+	}
+}
+
+/*=============================================
+PANTALLA DE TABLET - SMALL (sm) 
+=============================================*/
+
+@media(max-width:1000px) and (min-width:768px){
+	
+}
+
+
+
+
+/*-----------------Linea divisora--------------------*/
+hr.style2 {
+	max-width: 1232px;
+	margin-top: 40px;
+	width: 100%;
+	border-top: 2px solid orange;
+	text-align: center;
+}
+
+hr.style2:after {
+	position: relative;
+	top: -24px;
+	content: 'CONTÁCTANOS';
+	padding: 0 56px;
+	background: white;
+	color: orange;
+	font-size: 28px;
+	font-family: Montserrat;
+}
+
+/*=============================================
+PANTALLA DE PHONES - EXTRA SMALL (xs)
+=============================================*/
+@media(max-width:767px){
+	hr.style2:after {
+		padding: 0 8px;
+		font-size: 20px;
+		top: -16px;
+	}
+}
+
+/*=============================================
+             Section 3 Fromulario
+=============================================*/
+#section3{
+	max-width: 1232px;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-flex-wrap:nowrap;
+	-ms-flex-wrap:nowrap;
+	flex-wrap: nowrap; /* si un elemento no cabe lo pone por debajo*/
+
+	-webkit-flex-direction: row;  /*direccion del acomodo de las cajas*/
+	-ms-flex-direction: row;
+	flex-direction: row;
+
+	-webkit-justify-content:space-between; 
+	-ms-flex-pack:space-between;
+	justify-content:space-between;
+
+	-webkit-align-items: center; /*alinea los elementos al centro de contenedor*/
+	-ms-flex-align: center; 
+	align-items: flex-start; 
+}
+
+#formulario{
+	margin-top: 32px;
+	width: 100%;
+	height: 100%;
+	color: black;
+	font-family: Montserrat;
+	padding-left: 104px;
+	padding-right: 64px;
+
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-flex-wrap:nowrap;
+	-ms-flex-wrap:nowrap;
+	flex-wrap: nowrap; /* si un elemento no cabe lo pone por debajo*/
+
+	-webkit-flex-direction: column;  /*direccion del acomodo de las cajas*/
+	-ms-flex-direction: column;
+	flex-direction: column;
+
+	-webkit-justify-content:flex-start; 
+	-ms-flex-pack:flex-start;
+	justify-content:flex-start;
+	
+	-webkit-align-items: flex-end; /*alinea los elementos al centro de contenedor*/
+	-ms-flex-align: flex-end;
+	align-items: flex-end;
+}
+
+.label{
+	width: 100%;
+	height: 24px;
+}
+
+.input{
+	width: 100%;
+	height: 32px;
+	border: 2px solid gray;
+	padding-left: 8px;
+	margin-bottom: 8px;
+	color: black;
+	font-family: Montserrat;
+}
+
+#btnEnviar{
+	margin-top: 32px;
+	
+	width: 100%;
+	padding-top: 8px;
+	padding-bottom: 6px;
+	background: white;
+	text-decoration: none;
+	text-align: center;
+	line-height: 40px;
+	background: #1D6C67;
+	border-radius: 25px 25px 25px 25px;
+	cursor: pointer;
+	font-family: Montserrat;
+	font-size: 18px;
+	letter-spacing: 4px;
+	color: white;
+	transition: all 250ms ease-in-out;
+}
+
+#btnEnviar:hover{
+	background: #DDB446;
+}
+
+#box2{
+	width: 100%;
+	height: 100%;
+	
+	margin-right: 80px;
+	margin-top: 32px;
+	
+	
+	color: black;
+	font-family: Montserrat;
+
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-flex-wrap:nowrap;
+	-ms-flex-wrap:nowrap;
+	flex-wrap: nowrap; /* si un elemento no cabe lo pone por debajo*/
+
+	-webkit-flex-direction: column;  /*direccion del acomodo de las cajas*/
+	-ms-flex-direction: column;
+	flex-direction: column;
+
+	-webkit-justify-content:flex-start; 
+	-ms-flex-pack:flex-start;
+	justify-content:flex-start;
+
+	align-items: flex-start;
+}
+
+#anuncio{
+	width: 100%;
+	padding-right: 32px;
+	height: 192px; 
+	color: #D0D0D0;
+	font-size: 36px;
+	margin-bottom: 16px;
+}
+
+hr.style3 {
+	width: 100%;
+	border-top: 2px solid #D0D0D0;
+	margin-top: 0px;
+	margin-bottom: 48px;
+}
+
+
+#clientes{
+	width: 100%;
+	height: 232px;
+	font-family: Montserrat;
+
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-flex-wrap:nowrap;
+	-ms-flex-wrap:nowrap;
+	flex-wrap: nowrap; /* si un elemento no cabe lo pone por debajo*/
+
+	-webkit-flex-direction: column;  /*direccion del acomodo de las cajas*/
+	-ms-flex-direction: column;
+	flex-direction: column;
+
+	-webkit-justify-content:flex-start; 
+	-ms-flex-pack:flex-start;
+	justify-content:flex-start;
+
+	align-items: flex-start;
+}
+
+#txtClientes{
+	width: 100%;
+	height: 24px;
+	color: orange;
+	font-family: Montserrat;
+	text-transform: uppercase;
+}
+
+#clientesImg{
+	width: 100%;
+	height: 152px;
+	
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-flex-wrap:nowrap;
+	-ms-flex-wrap:nowrap;
+	flex-wrap: nowrap; /* si un elemento no cabe lo pone por debajo*/
+
+	-webkit-flex-direction: row;  /*direccion del acomodo de las cajas*/
+	-ms-flex-direction: row;
+	flex-direction: row;
+
+	-webkit-justify-content:space-between; 
+	-ms-flex-pack:space-between;
+	justify-content:space-between;
+}
+
+#imgLook{
+	width: auto;
+	height: 72px;
+	margin-top: 40px;
+	margin-right: 8px;
+}
+
+#imgInter{
+	width: auto;
+	height: 64px;
+	margin-top: 40px;
+	margin-left: 8px;
+}
+
+.imgClientes{
+	width: auto;
+	height: 72px;
+	margin-top: 40px;
+	margin-right: 8px;
+	margin-left: 8px;
+}
+
+#imgRadical{
+	width: auto;
+	height: 56px;
+	margin-top: 40px;
+	margin-right: 8px;
+	margin-left: 8px;
+}
+
+/*=============================================
+PANTALLA DE PHONES - EXTRA SMALL (xs)
+=============================================*/
+@media(max-width:767px){
+	#section3{
+		height: 100%;
+		margin-bottom: 16px;
+
+		-webkit-flex-direction: column;  /*direccion del acomodo de las cajas*/
+		-ms-flex-direction: column;
+		flex-direction: column;
+
+		-webkit-justify-content:center; 
+		-ms-flex-pack:center;
+		justify-content: center;
+
+		-webkit-align-items: center; /*alinea los elementos al centro de contenedor*/
+		-ms-flex-align: center; 
+		align-items: center; 
+	}
+
+	#formulario{
+		-webkit-justify-content:center; 
+		-ms-flex-pack:center;
+		justify-content:center;
+		
+		-webkit-align-items: center; /*alinea los elementos al centro de contenedor*/
+		-ms-flex-align: center;
+		align-items: center;
+
+		padding-right: 16px;
+		padding-left: 16px;
+	}
+
+	.label{
+		margin-right: 0px;
+	}
+
+	.input{
+		margin-right: 0px;
+	}
+
+	#btnEnviar{
+		margin-right: 0px;
+	}
+
+	#box2{
+		
+		margin-right: 0px;
+		
+		-webkit-justify-content:center; 
+		-ms-flex-pack:center;
+		justify-content:center;
+		-webkit-align-items: center; /*alinea los elementos al centro de contenedor*/
+		-ms-flex-align: center; 
+		align-items: center;
+	}
+
+	#anuncio{
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		font-size: 34px;
+		margin-bottom: 16px;
+		padding: 0;
+	}
+
+
+	#clientes{
+		width: 100%;
+
+		-webkit-align-items: center; /*alinea los elementos al centro de contenedor*/
+		-ms-flex-align: center; 
+		align-items: center;
+
+		-webkit-justify-content:center; 
+		-ms-flex-pack:center;
+		justify-content:center;
+	}
+
+	#txtClientes{
+		text-align: center;
+		margin: 0px;
+	}
+
+	#clientesImg{
+		width: 100%;
+		height: 100%;
+		-webkit-flex-wrap:wrap;
+		-ms-flex-wrap:wrap;
+		flex-wrap: wrap; /* si un elemento no cabe lo pone por debajo*/
+
+		-webkit-flex-direction: row;  /*direccion del acomodo de las cajas*/
+		-ms-flex-direction: row;
+		flex-direction: row;
+	}
+
+	#imgLook{
+		width: 56px;
+		height: 56px;
+		margin-left: 32px;
+		margin-top: 40px;
+		margin-right: 8px;
+	}
+
+	#imgInter{
+		width: 80px;
+		height: 48px;
+		margin-top: 40px;
+		margin-left: 8px;
+		margin-right: 56px;
+	}
+
+	.imgClientes{
+		width: 56px;
+		height: 56px;
+		margin-top: 40px;
+		margin-right: 24px;
+		margin-left: 32px;
+	}
+
+	#imgRadical{
+		width: 56px;
+		height: 56px;
+		margin-top: 40px;
+		margin-right: 16px;
+		margin-left: 56px;
+	}
+
+
+
+}
+
+/*=============================================
+PANTALLA DE TABLET - SMALL (sm) 
+=============================================*/
+
+@media(max-width:1000px) and (min-width:768px){
+	#section3{
+		
+		-webkit-flex-direction: column;  /*direccion del acomodo de las cajas*/
+		-ms-flex-direction: column;
+		flex-direction: column;
+
+		-webkit-justify-content:center; 
+		-ms-flex-pack:center;
+		justify-content: center;
+
+		-webkit-align-items: center; /*alinea los elementos al centro de contenedor*/
+		-ms-flex-align: center; 
+		align-items: center; 
+	}
+
+	#formulario{
+		-webkit-justify-content:center; 
+		-ms-flex-pack:center;
+		justify-content:center;
+		
+		-webkit-align-items: center; /*alinea los elementos al centro de contenedor*/
+		-ms-flex-align: center;
+		align-items: center;
+	}
+
+	.label{
+		margin-right: 0px;
+	}
+
+	.input{
+		margin-right: 0px;
+	}
+
+	#btnEnviar{
+		margin-right: 0px;
+	}
+
+	#box2{
+		margin-right: 0px;
+
+		-webkit-justify-content:flex-start; 
+		-ms-flex-pack:center;
+		justify-content:center;
+		-webkit-align-items: center; /*alinea los elementos al centro de contenedor*/
+		-ms-flex-align: center; 
+		align-items: center;
+	}
+
+	#anuncio{
+		padding-right: 64px;
+		padding-left: 80px;
+		text-align: center;
+		margin-bottom: 0px;
+	}
+
+	#clientes{
+		-webkit-align-items: center; /*alinea los elementos al centro de contenedor*/
+		-ms-flex-align: center; 
+		align-items: center;
+		padding-left: 56px;
+		padding-right: 56px;
+	}
+}
+
+
+
+/*=============================================
+                    FOOTER
+=============================================*/
+footer{
+	width: 100%;
+	height: 96px;
+	background: orange;
+
+	
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-flex-wrap:nowrap;
+	-ms-flex-wrap:nowrap;
+	flex-wrap: nowrap; /* si un elemento no cabe lo pone por debajo*/
+
+	-webkit-flex-direction: row;  /*direccion del acomodo de las cajas*/
+	-ms-flex-direction: row;
+	flex-direction: row;
+
+	-webkit-justify-content:space-between; 
+	-ms-flex-pack:space-between;
+	justify-content:space-between;
+
+	-webkit-align-items: center; /*alinea los elementos al centro de contenedor*/
+	-ms-flex-align: center; 
+	align-items: center; 
+}
+
+#redes{
+	width: 100%;
+	margin-left: 80px;
+	display: flex;
+
+
+	-webkit-flex-wrap:nowrap;
+	-ms-flex-wrap:nowrap;
+	flex-wrap: nowrap; /* si un elemento no cabe lo pone por debajo*/
+
+	-webkit-flex-direction: row;  /*direccion del acomodo de las cajas*/
+	-ms-flex-direction: row;
+	flex-direction: row;
+
+	-webkit-justify-content:flex-start; 
+	-ms-flex-pack:flex-start;
+	justify-content:flex-start;
+
+	-webkit-align-items: center; /*alinea los elementos al centro de contenedor*/
+	-ms-flex-align: center; 
+	align-items: center; 
+}
+
+.imgPie{
+	margin-left: 8px;
+	margin-right: 8px;
+	
+}
+
+#fb{
+	width: 8px;
+	height: 16px;
+}
+
+#bh{
+	width: 24px;
+	height: 16px;
+}
+
+#inst{
+	width: 16px;
+	height: 16px;
+}
+
+#copy{
+	width: 100%;
+	
+
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-flex-wrap:nowrap;
+	-ms-flex-wrap:nowrap;
+	flex-wrap: nowrap; /* si un elemento no cabe lo pone por debajo*/
+
+	-webkit-flex-direction: row;  /*direccion del acomodo de las cajas*/
+	-ms-flex-direction: row;
+	flex-direction: row;
+
+	-webkit-justify-content:space-between; 
+	-ms-flex-pack:space-between;
+	justify-content:space-between;
+
+	-webkit-align-items: center; /*alinea los elementos al centro de contenedor*/
+	-ms-flex-align: center; 
+	align-items: center; 
+}
+
+#txtCopy{
+	width: 440px;
+	color: white;
+	font-family: Montserrat;
+
+}
+
+#aviso{
+	width: 168px;
+	color: black;
+	font-family: Montserrat;
+}
+
+#footerLogo{
+	width: 100%;
+	height: 56px;
+	margin-right: 80px;
+	
+
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-flex-wrap:nowrap;
+	-ms-flex-wrap:nowrap;
+	flex-wrap: nowrap; /* si un elemento no cabe lo pone por debajo*/
+
+	-webkit-flex-direction: row;  /*direccion del acomodo de las cajas*/
+	-ms-flex-direction: row;
+	flex-direction: row;
+
+	-webkit-justify-content:flex-end; 
+	-ms-flex-pack:flex-end;
+	justify-content:flex-end;
+
+	-webkit-align-items: center; /*alinea los elementos al centro de contenedor*/
+	-ms-flex-align: center; 
+	align-items: center; 
+}
+
+#imgAori{
+	width: 144px;
+	height: 48px;
+}
+
+/*=============================================
+PANTALLA DE PHONES - EXTRA SMALL (xs)
+=============================================*/
+@media(max-width:767px){
+	footer{
+	
+		height: 240px;
+		background: orange;
+
+		-webkit-flex-direction: column;  /*direccion del acomodo de las cajas*/
+		-ms-flex-direction: column;
+		flex-direction: column;
+
+		-webkit-justify-content:center; 
+		-ms-flex-pack:center;
+		justify-content:center;
+
+		-webkit-align-items: center; /*alinea los elementos al centro de contenedor*/
+		-ms-flex-align: center; 
+		align-items: center; 
+	}
+
+	#redes{
+		width: 100%;
+		margin-left: 0px;
+		margin-bottom: 16px;
+		-webkit-justify-content:center; 
+		-ms-flex-pack:center;
+		justify-content:center;
+
+		-webkit-align-items: center; /*alinea los elementos al centro de contenedor*/
+		-ms-flex-align: center; 
+		align-items: center; 
+
+	}
+
+	.imgPie{
+		-webkit-flex-grow: 0; /*que tanto tiene que crecer para caber en el contenedor y el shrink es para encojer*/
+		-ms-flex-grow: 0; 
+		flex-grow: 0; 
+		-webkit-flex-shrink: 0;
+		-ms-flex-shrink: 0;
+		flex-shrink: 0;
+	}
+
+	#copy{
+		width: 100%;
+
+		-webkit-flex-direction: column;  /*direccion del acomodo de las cajas*/
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+	
+	#txtCopy{
+		text-align: center;
+		width: 100%;
+		margin-bottom: 8px;
+	}
+
+	#footerLogo{
+		width: 100%;
+		margin-right: 0px;
+		margin-top: 16px;
+
+		-webkit-justify-content:center; 
+		-ms-flex-pack:center;
+		justify-content:center;
+	}
+}
+
+/*=============================================
+PANTALLA DE TABLET - SMALL (sm) 
+=============================================*/
+
+@media(max-width:1000px) and (min-width:768px){
+	footer{
+	
+		height: 184px;
+		background: orange;
+
+		-webkit-flex-direction: column;  /*direccion del acomodo de las cajas*/
+		-ms-flex-direction: column;
+		flex-direction: column;
+
+		-webkit-justify-content:center; 
+		-ms-flex-pack:center;
+		justify-content:center;
+
+		-webkit-align-items: center; /*alinea los elementos al centro de contenedor*/
+		-ms-flex-align: center; 
+		align-items: center; 
+	}
+	#redes{
+		width: 100%;
+		margin-left: 0px;
+		margin-bottom: 16px;
+		-webkit-justify-content:center; 
+		-ms-flex-pack:center;
+		justify-content:center;
+
+		-webkit-align-items: center; /*alinea los elementos al centro de contenedor*/
+		-ms-flex-align: center; 
+		align-items: center; 
+
+	}
+
+	.imgPie{
+		-webkit-flex-grow: 0; /*que tanto tiene que crecer para caber en el contenedor y el shrink es para encojer*/
+		-ms-flex-grow: 0; 
+		flex-grow: 0; 
+		-webkit-flex-shrink: 0;
+		-ms-flex-shrink: 0;
+		flex-shrink: 0;
+	}
+	#copy{
+		width: 100%;
+		-webkit-justify-content:center; 
+		-ms-flex-pack:center;
+		justify-content:center;
+	}
+	
+	#footerLogo{
+		width: 100%;
+		margin-right: 0px;
+		margin-top: 16px;
+
+		-webkit-justify-content:center; 
+		-ms-flex-pack:center;
+		justify-content:center;
+	}
+}
+
