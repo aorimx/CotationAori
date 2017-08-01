@@ -58,13 +58,47 @@ header{
 
 /*-----------------Solicitud--------------------*/
 #divSolicitud{
-	width: 712px;
+	width: 696px;
 	height: 880px;
 	border: 1px solid black;
-	margin-left: 40px;
-	margin-top: 24px;S
+	margin-left: 56px;
+	margin-top: 24px;
 }
 
+.h1Style{
+	margin-top: 0;
+	margin-bottom: 24px;
+}
+
+.h2Style{
+	margin-top: 0;
+	margin-bottom: 16px;
+}
+
+.pStyle{
+	margin-top: 0;
+	margin-bottom: 24px;
+}
+
+.pList{
+	margin-bottom: 8px;
+}
+
+
+#listElement{
+	list-style-type: decimal;
+	margin-bottom: 8px;
+	margin-top: 0;
+	padding: 0px;
+	
+}
+
+#lista{
+	margin-top: 0;
+	padding: 0;
+	margin-left: 16px;
+	
+}
 
 
 /*--------------------Footer-----------------*/
