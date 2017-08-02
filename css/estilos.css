@@ -271,7 +271,6 @@ body{
  }
 
 #btnSolicitar{
-	
 	margin-bottom: 96px;
 	padding-left: 32px;
 	padding-right: 32px;
@@ -482,11 +481,12 @@ PANTALLA DE TABLET - SMALL (sm)
 #section1{
 	max-width: 1232px;
 	width: 100%;
-	height: 488px;
+	height: 100%;
 	background: #fff;
 	padding-right: 40px;
 	padding-left: 40px;
-	padding-top: 16px;
+	padding-top: 80px;
+	padding-bottom: 64px;
 	
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -504,9 +504,9 @@ PANTALLA DE TABLET - SMALL (sm)
 	-ms-flex-pack:center;
 	justify-content:center;
 
-	-webkit-align-items: center; /*alinea los elementos al centro de contenedor*/
-	-ms-flex-align: center; 
-	align-items: center; 
+	-webkit-align-items: baseline; /*alinea los elementos al centro de contenedor*/
+	-ms-flex-align: baseline; 
+	align-items: baseline; 
 }
 
 .imagenes{
@@ -631,7 +631,7 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
  
 #section2{
 	width: 100%;
-	height: 1192px;
+	height: 1200px;
 	background: #fff;
 	margin-top: 16px;
 	margin-bottom: 40px;
@@ -681,6 +681,15 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 	align-items: center;
 }
 
+.productosXs{
+	text-align: justify;
+}
+
+.btnCotizacion{
+	color: white;
+	text-decoration: none;
+}
+
 #bgProducto1{
 	background: url('../imgCotizador/Fotos/Paralax_tienda.png');
 	
@@ -716,7 +725,7 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 }
 
 #producto1 h2{
-	margin-top: 64px;
+	margin-top: 48px;
 	margin-left: 64px;
 	font-family: Montserrat-el;
 	font-size: 28px;
@@ -724,22 +733,22 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 }
 
 #producto1 p{
-	margin-left: 64px;
-	margin-top: 24px;
-	width: 424px;
+	padding-left: 64px;
+	padding-top: 24px;
+	width: 512px;
 	color: white;
 	font-family: Montserrat-li;
 	font-size: 16px;
 }
 
-#producto1 ul li{
+.btnSec2{
+
 	padding-top: 8px;
 	padding-bottom: 6px;
 	padding-left: 40px;
 	padding-right: 40px;
-	margin-left: 64px;
-	margin-top: 40px;
 	background: transparent;
+	text-decoration: none;
 	text-align: center;
 	line-height: 40px;
 	border: 1.5px solid #fff;	
@@ -750,14 +759,10 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 	font-size: 18px;	
 	letter-spacing: 4px;
 	transition: all 250ms ease-in-out;
-}
-
-.btnCotizacion{
 	color: white;
-	text-decoration: none;
 }
 
-#producto1 ul li:hover{
+.btnSec2:hover{
 	background: #DDB446;
 	border: 1px solid #DDB446;
 }
@@ -798,7 +803,7 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 }
 
 #producto2 h2{
-	margin-top: 64px;
+	margin-top: 48px;
 	margin-right: 64px;
 	font-family: Montserrat-el;
 	font-size: 28px;
@@ -806,11 +811,13 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 }
 
 #producto2 p{
-	margin-right: 64px;
-	margin-top: 24px;
-	width: 424px;
+	padding-right: 64px;
+	padding-top: 24px;
+	width: 512px;
 	color: white;
-	text-align: right;
+	text-align: justify;
+	-moz-text-align-last: right; /* Code for Firefox */
+    text-align-last: right;
 	font-family: Montserrat-li;
 	font-size: 16px;
 }
@@ -877,7 +884,7 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 }
 
 #producto3 h2{
-	margin-top: 64px;
+	margin-top: 48px;
 	margin-left: 64px;
 	font-family: Montserrat-el;
 	font-size: 28px;
@@ -885,9 +892,9 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 }
 
 #producto3 p{
-	margin-left: 64px;
-	margin-top: 24px;
-	width: 424px;
+	padding-left: 64px;
+	padding-top: 24px;
+	width: 512px;
 	color: white;
 	font-family: Montserrat-li;
 	font-size: 16px;
@@ -1090,8 +1097,8 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 	-ms-flex-pack:space-between;
 	justify-content:space-between;
 
-	-webkit-align-items: center; /*alinea los elementos al centro de contenedor*/
-	-ms-flex-align: center; 
+	-webkit-align-items: flex-start; /*alinea los elementos al centro de contenedor*/
+	-ms-flex-align: flex-start; 
 	align-items: flex-start; 
 }
 
