@@ -742,7 +742,8 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 }
 
 .btnSec2{
-
+	margin-left: 64px;
+	margin-top: 32px;
 	padding-top: 8px;
 	padding-bottom: 6px;
 	padding-left: 40px;
@@ -751,7 +752,7 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 	text-decoration: none;
 	text-align: center;
 	line-height: 40px;
-	border: 1.5px solid #fff;	
+	border: 1px solid #fff;	
 	border-radius: 25px 25px 25px 25px;
 	cursor: pointer;
 	font-family: Montserrat-el;
@@ -822,8 +823,7 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 	font-size: 16px;
 }
 
-#producto2 ul li{
-
+#btnProducto2{
 	padding-top: 8px;
 	padding-bottom: 6px;
 	padding-left: 40px;
@@ -833,7 +833,7 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 	background: transparent;
 	text-align: center;
 	line-height: 40px;
-	border: 1.5px solid #fff;	
+	border: 1px solid #fff;	
 	border-radius: 25px 25px 25px 25px;
 	cursor: pointer;
 	font-family: Montserrat-el;
@@ -843,7 +843,7 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 	transition: all 250ms ease-in-out;
 }
 
-#producto2 ul li:hover{
+#btnProducto2:hover{
 	background: #DDB446;
 	border:#DDB446;
 }
