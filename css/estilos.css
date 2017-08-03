@@ -64,7 +64,7 @@ body{
 	width: 100%;
 	height: 544px;
 	
-	background-image: url(../imgCotizador/Fotos/Image_header.png);
+	background-image: url(../Quotation/imgCotizador/Fotos/imgHeader.png);
 	background-size: cover;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -175,7 +175,6 @@ body{
 	-ms-flex-align: center; 
 	align-items: center; 
 	
-	-webkit-transition: margin-left .5s;
 	
 }
 
@@ -682,6 +681,32 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 }
 
 .productosXs{
+	text-align: left;
+	padding-left: 64px;
+	padding-top: 24px;
+	width: 512px;
+	color: white;
+	font-family: Montserrat-li;
+	font-size: 16px;
+}
+
+.parrafo3{
+	display: none;
+	padding-left: 64px;
+	width: 512px;
+	color: white;
+	font-family: Montserrat-li;
+	font-size: 16px;
+	text-align: left;
+}
+
+.verMas{
+	display: block;
+	padding-left: 64px;
+	width: 512px;
+	color: white;
+	font-family: Montserrat-li;
+	font-size: 16px;
 	text-align: justify;
 }
 
@@ -763,6 +788,26 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 	color: white;
 }
 
+.btnVerMas{
+	padding-top: 8px;
+	padding-bottom: 6px;
+	padding-left: 40px;
+	padding-right: 40px;
+	background: transparent;
+	text-decoration: none;
+	text-align: center;
+	line-height: 40px;
+	border: 1px solid #fff;	
+	border-radius: 25px 25px 25px 25px;
+	cursor: pointer;
+	font-family: Montserrat-el;
+	font-weight: bold;
+	font-size: 18px;	
+	letter-spacing: 4px;
+	transition: all 250ms ease-in-out;
+	color: white;
+}
+
 .btnSec2:hover{
 	background: #DDB446;
 	border: 1px solid #DDB446;
@@ -816,9 +861,8 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 	padding-top: 24px;
 	width: 512px;
 	color: white;
-	text-align: justify;
-	-moz-text-align-last: right; /* Code for Firefox */
-    text-align-last: right;
+	text-align: right;
+	
 	font-family: Montserrat-li;
 	font-size: 16px;
 }
@@ -889,15 +933,6 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 	font-family: Montserrat-el;
 	font-size: 28px;
 	color: white;
-}
-
-#producto3 p{
-	padding-left: 64px;
-	padding-top: 24px;
-	width: 512px;
-	color: white;
-	font-family: Montserrat-li;
-	font-size: 16px;
 }
 
 #producto3 ul li{
