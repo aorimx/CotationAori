@@ -726,6 +726,7 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 	padding-left: 64px;
 	padding-top: 24px;
 	width: 512px;
+	background: rgba(0,0,0,.3);
 	color: white;
 	font-family: Montserrat-li;
 	font-size: 16px;
@@ -757,8 +758,7 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 }
 
 #bgProducto1{
-	background: url('../imgCotizador/Fotos/imgLanding.jpg');
-	
+	background: url('../imgCotizador/Fotos/imgTienda.jpg');
 	background-repeat: no-repeat;/* no se repetira*/
 	background-size: 100% 100%; /*imagen 100% del ancho*/
 	background-attachment: fixed; /*posicion fija */
@@ -796,15 +796,6 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 	font-family: Montserrat-el;
 	font-size: 28px;
 	color: white;
-}
-
-#producto1 p{
-	padding-left: 64px;
-	padding-top: 24px;
-	width: 512px;
-	color: white;
-	font-family: Montserrat-li;
-	font-size: 16px;
 }
 
 .btnSec2{
@@ -855,8 +846,7 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 }
 
 #bgProducto2{
-	background: url('../imgCotizador/Fotos/imgBlog.jpg');
-	
+	background: url('../imgCotizador/Fotos/imgLanding.jpg');	
 	background-repeat: no-repeat;/* no se repetira*/
 	background-size: 100% 100%; /*imagen 100% del ancho*/
 	background-attachment: fixed; /*posicion fija */
@@ -934,8 +924,7 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 }
 
 #bgProducto3{
-	background: url('../imgCotizador/Fotos/imgTienda.jpg');
-	
+	background: url('../imgCotizador/Fotos/imgBlog.jpg');
 	background-repeat: no-repeat;/* no se repetira*/
 	background-size: cover; /*imagen 100% del ancho*/
 	background-attachment: fixed; /*posicion fija */
