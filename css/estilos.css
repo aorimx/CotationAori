@@ -64,8 +64,8 @@ body{
 	width: 100%;
 	height: 544px;
 	
-	background-image: url(../Quotation/imgCotizador/Fotos/imgHeader.png);
-	background-size: cover;
+	background-image: url(C:/wamp/www/Quotation/imgCotizador/Fotos/imgHeader.png);
+	background-size: 100% 100%;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 
@@ -267,7 +267,7 @@ body{
 #btnSolicitud{
  	text-decoration: none;
  	color: white;
- }
+}
 
 #btnSolicitar{
 	margin-bottom: 96px;
@@ -275,15 +275,15 @@ body{
 	padding-right: 32px;
 	padding-top: 8px;
 	padding-bottom: 6px;
-	background: #1D6C67;
+	background: #Ed6060;
 	text-decoration: none;
 	text-align: center;
 	line-height: 40px;
-		
 	border-radius: 25px 25px 25px 25px;
 	cursor: pointer;
-	font-family: Montserrat;
-	font-size: 24px;
+	font-family: Montserrat-li;
+	letter-spacing: 2px;
+	font-size: 22px;
 	color: white;
 	transition: all 250ms ease-in-out;
 
@@ -482,11 +482,86 @@ PANTALLA DE TABLET - SMALL (sm)
 	width: 100%;
 	height: 100%;
 	background: #fff;
-	padding-right: 40px;
-	padding-left: 40px;
-	padding-top: 80px;
-	padding-bottom: 64px;
 	
+	
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-flex-wrap:nowrap;
+	-ms-flex-wrap:nowrap;
+	flex-wrap: nowrap; /* si un elemento no cabe lo pone por debajo*/
+
+	-webkit-flex-direction: column;  /*direccion del acomodo de las cajas*/
+	-ms-flex-direction: column;
+	flex-direction: column;
+
+	-webkit-justify-content:center; 
+	-ms-flex-pack:center;
+	justify-content:center;
+
+	-webkit-align-items: center; /*alinea los elementos al centro de contenedor*/
+	-ms-flex-align: center; 
+	align-items: center; 
+}
+
+.txtContenedor1y3{
+	width: 48%;
+	padding-top: 8px;
+	padding-bottom: 6px;
+}
+
+.txtContenedor2y4{
+	width: 48%;
+	margin-left: 40px;
+	padding-left: 40px;
+	padding-top: 8px;
+	padding-bottom: 6px;
+}
+
+.txtBeneficios{
+	width: 88%;
+	text-align: left;
+	text-decoration: none;
+	font-family: Montserrat;
+	color: #818081;
+	font-size: 14px;
+}
+
+.imagenes{
+	width: auto;
+	height: 156px;
+	
+}
+
+.imgPerYPro{
+	padding-left: 40px;
+}
+
+.imgRapYBuen{
+	padding-right: 32px;
+	margin-right: 104px;
+}
+
+.titulo{
+	margin-bottom: 16px;
+	color:	#4a4a4a ;
+	font-size: 24px;
+	font-family: Montserrat-li;
+	letter-spacing: 1px;	
+}
+
+.beneficios{
+	border: 1px solid red;
+	padding-top: 72px;
+	padding-bottom: 72px;
+	width: 80%;
+	-webkit-flex-grow: 1; /*que tanto tiene que crecer para caber en el contenedor y el shrink es para encojer*/
+	-ms-flex-grow: 1; 
+	flex-grow: 1; 
+	-webkit-flex-shrink: 1;
+	-ms-flex-shrink: 1;
+	flex-shrink: 1;
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
@@ -501,47 +576,11 @@ PANTALLA DE TABLET - SMALL (sm)
 
 	-webkit-justify-content:center; 
 	-ms-flex-pack:center;
-	justify-content:center;
+	justify-content: space-around;
 
-	-webkit-align-items: baseline; /*alinea los elementos al centro de contenedor*/
-	-ms-flex-align: baseline; 
-	align-items: baseline; 
-}
-
-.imagenes{
-	width: 116px;
-	height: 116px;
-	margin-bottom: 16px;
-}
-
-.titulo{
-	margin-top: 8px;
-	margin-bottom: 24px;
-	color: 	#A0A0A0 ;
-	font-size: 18px;
-	font-family: Montserrat-li;
-	letter-spacing: 1px;
-	font-weight: bold;
-	text-transform: uppercase;
-}
-
-.beneficios{
-	margin-left: 24px;
-	margin-right: 24px;
-	padding-left: 8px;
-	padding-right: 8px;
-	
-	width: 100%;
-	-webkit-flex-grow: 1; /*que tanto tiene que crecer para caber en el contenedor y el shrink es para encojer*/
-	-ms-flex-grow: 1; 
-	flex-grow: 1; 
-	-webkit-flex-shrink: 1;
-	-ms-flex-shrink: 1;
-	flex-shrink: 1;
-	color: black;
-	font-family: Montserrat;
-	font-size: 14px;
-	
+	-webkit-align-items: center; /*alinea los elementos al centro de contenedor*/
+	-ms-flex-align: center; 
+	align-items: center; 
 }
 
 /*=============================================
@@ -595,21 +634,23 @@ PANTALLA DE TABLET - SMALL (sm)
 /*-----------------Linea divisora--------------------*/
 hr.style1 {
 	max-width: 1232px;
-	margin-top: 40px;
+	margin-top: 64px;
+	margin-bottom: 40px;
 	width: 100%;
-	border-top: 2px solid orange;
+	border-top: 2px solid #Ed6060;
 	text-align: center;
 }
 
 hr.style1:after {
 	position: relative;
-	top: -24px;
+	top: -22px;
 	content: 'NUESTROS PRODUCTOS';
 	padding: 0 56px;
 	background: white;
-	color: orange;
-	font-size: 24px;
-	font-family: Montserrat;
+	color: #Ed6060;
+	font-size: 32px;
+	font-family: Montserrat-li;
+	
 }
 /*=============================================
 PANTALLA DE PHONES - EXTRA SMALL (xs)
@@ -716,7 +757,7 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 }
 
 #bgProducto1{
-	background: url('../imgCotizador/Fotos/Paralax_tienda.png');
+	background: url('../imgCotizador/Fotos/imgLanding.jpg');
 	
 	background-repeat: no-repeat;/* no se repetira*/
 	background-size: 100% 100%; /*imagen 100% del ancho*/
@@ -814,7 +855,7 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 }
 
 #bgProducto2{
-	background: url('../imgCotizador/Fotos/Paralax_landing.png');
+	background: url('../imgCotizador/Fotos/imgBlog.jpg');
 	
 	background-repeat: no-repeat;/* no se repetira*/
 	background-size: 100% 100%; /*imagen 100% del ancho*/
@@ -893,10 +934,10 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 }
 
 #bgProducto3{
-	background: url('../imgCotizador/Fotos/Paralax_Blog.png');
+	background: url('../imgCotizador/Fotos/imgTienda.jpg');
 	
 	background-repeat: no-repeat;/* no se repetira*/
-	background-size: 100% 100%; /*imagen 100% del ancho*/
+	background-size: cover; /*imagen 100% del ancho*/
 	background-attachment: fixed; /*posicion fija */
 }
 
