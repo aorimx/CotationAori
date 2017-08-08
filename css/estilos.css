@@ -552,7 +552,6 @@ PANTALLA DE TABLET - SMALL (sm)
 }
 
 .beneficios{
-	border: 1px solid red;
 	padding-top: 72px;
 	padding-bottom: 72px;
 	width: 80%;
@@ -581,6 +580,12 @@ PANTALLA DE TABLET - SMALL (sm)
 	-webkit-align-items: center; /*alinea los elementos al centro de contenedor*/
 	-ms-flex-align: center; 
 	align-items: center; 
+}
+
+.lineBeneficios{
+	width: 100%;
+	border-top: 1px solid #E0DDE1;
+	margin: 0;
 }
 
 /*=============================================
@@ -645,7 +650,7 @@ hr.style1:after {
 	position: relative;
 	top: -22px;
 	content: 'NUESTROS PRODUCTOS';
-	padding: 0 56px;
+	padding: 0 32px;
 	background: white;
 	color: #Ed6060;
 	font-size: 32px;
@@ -671,7 +676,7 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
  
 #section2{
 	width: 100%;
-	height: 1200px;
+	height: 100%;
 	background: #fff;
 	margin-top: 16px;
 	margin-bottom: 40px;
@@ -699,7 +704,6 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 
 .bgProductos{
 	width: 100%;
-	height: 400px;
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
@@ -725,46 +729,30 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 	text-align: left;
 	padding-left: 64px;
 	padding-top: 24px;
-	width: 512px;
-	background: rgba(0,0,0,.3);
+	width: 536px;
 	color: white;
-	font-family: Montserrat-li;
+	font-family: Montserrat;
 	font-size: 16px;
-}
-
-.parrafo3{
-	display: none;
-	padding-left: 64px;
-	width: 512px;
-	color: white;
-	font-family: Montserrat-li;
-	font-size: 16px;
-	text-align: left;
-}
-
-.verMas{
-	display: block;
-	padding-left: 64px;
-	width: 512px;
-	color: white;
-	font-family: Montserrat-li;
-	font-size: 16px;
-	text-align: justify;
 }
 
 .btnCotizacion{
 	color: white;
 	text-decoration: none;
 }
-
-#bgProducto1{
-	background: url('../imgCotizador/Fotos/imgTienda.jpg');
+/*    empieza producto 1    */
+.bgProducto1{
+	height: 400px;
+	background: url('../imgCotizador/Fotos/imgTienda.png');
 	background-repeat: no-repeat;/* no se repetira*/
 	background-size: 100% 100%; /*imagen 100% del ancho*/
 	background-attachment: fixed; /*posicion fija */
 }
 
-#producto1{
+.bgProducto1VerMas{
+	height: 560px;
+}
+
+.producto1{
 	max-width: 1232px;
 	width: 100%;
 	height: 400px;
@@ -790,7 +778,11 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 	align-items: flex-start;
 }
 
-#producto1 h2{
+.producto1VerMas{
+	height: 560px;
+}
+
+.producto1 h2{
 	margin-top: 48px;
 	margin-left: 64px;
 	font-family: Montserrat-el;
@@ -800,27 +792,7 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 
 .btnSec2{
 	margin-left: 64px;
-	margin-top: 32px;
-	padding-top: 8px;
-	padding-bottom: 6px;
-	padding-left: 40px;
-	padding-right: 40px;
-	background: transparent;
-	text-decoration: none;
-	text-align: center;
-	line-height: 40px;
-	border: 1px solid #fff;	
-	border-radius: 25px 25px 25px 25px;
-	cursor: pointer;
-	font-family: Montserrat-el;
-	font-weight: bold;
-	font-size: 18px;	
-	letter-spacing: 4px;
-	transition: all 250ms ease-in-out;
-	color: white;
-}
-
-.btnVerMas{
+	margin-top: 48px;
 	padding-top: 8px;
 	padding-bottom: 6px;
 	padding-left: 40px;
@@ -845,15 +817,53 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 	border: 1px solid #DDB446;
 }
 
-#bgProducto2{
-	background: url('../imgCotizador/Fotos/imgLanding.jpg');	
+.txtVerMas1{
+	display: block;
+	margin-top: 16px;
+	padding-left: 64px;
+	width: 536px;
+	color: white;
+	text-decoration: none;
+	font-family: Montserrat;
+	font-size: 20px;
+	text-align: left;
+	cursor: pointer;
+	
+}
+
+.txt1None{
+	display: none;
+}
+
+.parrafo1{
+	display: none;
+}
+
+.verMas{
+	display: block;
+	padding-left: 64px;
+	width: 536px;
+	color: white;
+	font-family: Montserrat;
+	font-size: 16px;
+	text-align: left;
+}
+
+/*    empieza producto 2    */
+.bgProducto2{
+	height: 400px;
+	background: url('../imgCotizador/Fotos/imgLanding.png');	
 	background-repeat: no-repeat;/* no se repetira*/
 	background-size: 100% 100%; /*imagen 100% del ancho*/
 	background-attachment: fixed; /*posicion fija */
 
 }
 
-#producto2{
+.bgProducto2VerMas{
+	height: 456px;
+}
+
+.producto2{
 	max-width: 1232px;
 	width: 100%;
 	height: 400px;
@@ -879,7 +889,11 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 	align-items: flex-end;
 }
 
-#producto2 h2{
+.producto2VerMas{
+	height: 456px;
+}
+
+.producto2 h2{
 	margin-top: 48px;
 	margin-right: 64px;
 	font-family: Montserrat-el;
@@ -887,14 +901,13 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 	color: white;
 }
 
-#producto2 p{
+.txtProducto2{
 	padding-right: 64px;
 	padding-top: 24px;
-	width: 512px;
+	width: 536px;
 	color: white;
 	text-align: right;
-	
-	font-family: Montserrat-li;
+	font-family: Montserrat;
 	font-size: 16px;
 }
 
@@ -923,14 +936,53 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 	border:#DDB446;
 }
 
-#bgProducto3{
-	background: url('../imgCotizador/Fotos/imgBlog.jpg');
+.txtVerMas2{
+	display: block;
+	margin-top: 16px;
+	padding-right: 64px;
+	width: 536px;
+	color: white;
+	text-decoration: none;
+	font-family: Montserrat;
+	font-size: 20px;
+	text-align: right;
+	cursor: pointer;
+	
+}
+
+.txt2None{
+	display: none;
+}
+
+.parrafo2{
+	display: none;
+}
+
+.verMas2{
+	display: block;
+	padding-right: 64px;
+	width: 536px;
+	color: white;
+	font-family: Montserrat;
+	font-size: 16px;
+	text-align: right;
+}
+
+
+/*    empieza producto 3    */
+.bgProducto3{
+	height: 400px;
+	background: url('../imgCotizador/Fotos/imgBlog.png');
 	background-repeat: no-repeat;/* no se repetira*/
 	background-size: cover; /*imagen 100% del ancho*/
 	background-attachment: fixed; /*posicion fija */
 }
 
-#producto3{
+.bgProducto3VerMas{
+	height: 472px;
+}
+
+.producto3{
 
 	max-width: 1232px;
 	width: 100%;
@@ -957,7 +1009,11 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 	align-items: flex-start;
 }
 
-#producto3 h2{
+.producto3VerMas{
+	height: 472px;
+}
+
+.producto3 h2{
 	margin-top: 48px;
 	margin-left: 64px;
 	font-family: Montserrat-el;
@@ -965,29 +1021,35 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 	color: white;
 }
 
-#producto3 ul li{
-
-	padding-top: 8px;
-	padding-bottom: 6px;
-	padding-left: 40px;
-	padding-right: 40px;
-	margin-left: 64px;
-	margin-top: 40px;
-	background: transparent;
-	text-align: center;
-	line-height: 40px;
-	border: 1.5px solid #fff;	
-	border-radius: 25px 25px 25px 25px;
+.txtVerMas3{
+	display: block;
+	margin-top: 16px;
+	padding-left: 64px;
+	width: 536px;
+	color: white;
+	text-decoration: none;
+	font-family: Montserrat;
+	font-size: 20px;
+	text-align: left;
 	cursor: pointer;
-	font-family: Montserrat-el;
-	font-weight: bold;
-	font-size: 18px;
-	letter-spacing: 4px;
-	transition: all 250ms ease-in-out;
 }
 
-#producto3 ul li:hover{
-	background: #DDB446;
+.txt3None{
+	display: none;
+}
+
+.parrafo3{
+	display: none;
+}
+
+.verMas3{
+	display: block;
+	padding-left: 64px;
+	width: 536px;
+	color: white;
+	font-family: Montserrat;
+	font-size: 16px;
+	text-align: left;
 }
 
 /*=============================================
@@ -1111,7 +1173,7 @@ hr.style2 {
 	max-width: 1232px;
 	margin-top: 40px;
 	width: 100%;
-	border-top: 2px solid orange;
+	border-top: 2px solid #ED6060;
 	text-align: center;
 }
 
@@ -1119,11 +1181,11 @@ hr.style2:after {
 	position: relative;
 	top: -24px;
 	content: 'CONTÁCTANOS';
-	padding: 0 56px;
+	padding: 0 32px;
 	background: white;
-	color: orange;
-	font-size: 28px;
-	font-family: Montserrat;
+	color: black;
+	font-size: 32px;
+	font-family: Montserrat-li;
 }
 
 /*=============================================
@@ -1167,13 +1229,222 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 	align-items: flex-start; 
 }
 
-#formulario{
+.formularios{
+	/*border: 3px solid red;*/
 	margin-top: 32px;
+	width: 100%;
+	height: 100%;
+	margin-bottom: 128px;
+
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-flex-wrap:nowrap;
+	-ms-flex-wrap:nowrap;
+	flex-wrap: nowrap; /* si un elemento no cabe lo pone por debajo*/
+
+	-webkit-flex-direction: column;  /*direccion del acomodo de las cajas*/
+	-ms-flex-direction: column;
+	flex-direction: column;
+
+	-webkit-justify-content:flex-start; 
+	-ms-flex-pack:flex-start;
+	justify-content:flex-start;
+	
+	-webkit-align-items: flex-end; /*alinea los elementos al centro de contenedor*/
+	-ms-flex-align: flex-end;
+	align-items: flex-end;
+}
+
+.opciones{
+	/*border: 2px  solid black;*/
+	width: 100%;
+	height: 15%;
+	padding-left: 88px;
+	padding-right: 64px;
+
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-flex-wrap:nowrap;
+	-ms-flex-wrap:nowrap;
+	flex-wrap: nowrap; /* si un elemento no cabe lo pone por debajo*/
+
+	-webkit-flex-direction: column;  /*direccion del acomodo de las cajas*/
+	-ms-flex-direction: column;
+	flex-direction: column;
+
+	-webkit-justify-content:flex-start; 
+	-ms-flex-pack:flex-start;
+	justify-content:flex-start;
+	
+	-webkit-align-items: center; /*alinea los elementos al centro de contenedor*/
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.txtOpciones{
+	width: 100%;
+	margin-bottom: 8px;
+	/*border: 2px solid orange;*/
+	font-size: 22px;
+	letter-spacing: 1px;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-flex-wrap:nowrap;
+	-ms-flex-wrap:nowrap;
+	flex-wrap: nowrap; /* si un elemento no cabe lo pone por debajo*/
+
+	-webkit-flex-direction: row ;  /*direccion del acomodo de las cajas*/
+	-ms-flex-direction: row;
+	flex-direction: row;
+
+	-webkit-justify-content:flex-start; 
+	-ms-flex-pack:flex-start;
+	justify-content:flex-start;
+}
+
+.txtEmpresa{
+	width: 45%;
+	color: #ED6060;
+	cursor: pointer;
+	font-family: Montserrat;
+}
+
+.txtProfesionista{
+	width: 55%;
+	color: #C6C3C7;
+	cursor: pointer;
+	font-family: Montserrat;
+}
+
+.txtEmpresaGris{
+	color: #C6C3C7;
+}
+
+.txtProfesionistaRojo{
+	color: #ED6060;
+	
+}
+
+
+.linesOpciones{
+	width: 100%;
+	/*border: 2px solid blue;*/
+	font-size: 22px;
+	letter-spacing: 1px;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-flex-wrap:nowrap;
+	-ms-flex-wrap:nowrap;
+	flex-wrap: nowrap; /* si un elemento no cabe lo pone por debajo*/
+
+	-webkit-flex-direction: row ;  /*direccion del acomodo de las cajas*/
+	-ms-flex-direction: row;
+	flex-direction: row;
+
+	-webkit-justify-content:flex-start; 
+	-ms-flex-pack:flex-start;
+	justify-content:flex-start;
+}
+
+hr.sliderEmpresa {
+	width: 45%;
+	border-top: 5px solid #ED6060;
+	margin-top: 0px;
+	margin-bottom: 24px;
+}
+
+hr.sliderProfesionista {
+	width: 55%;
+	border-top: 5px solid #C6C3C7;
+	margin-top: 0px;
+	margin-bottom: 48px;
+}
+
+hr.gray{
+	border-top: 5px solid #C6C3C7;
+}
+
+hr.red{
+	border-top: 5px solid #ED6060;
+}
+
+.formContainer{
+	/*border: 3px solid red;*/
+	width: 100%;
+	height: 480px;
+	overflow: hidden;
+	color: black;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	
+}
+
+.ulForm{
+	margin:0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	list-style: none;
+	flex-direction: column;
+	flex-wrap: wrap;
+	transition: all 1s;
+	
+} 
+
+.ulForm li{
+	width: 100%;
+}
+
+.ulFormSlider{
+	margin-left: -100%;
+}
+
+.formularioEmpresa{
+	/*border: 1px solid blue;*/
 	width: 100%;
 	height: 100%;
 	color: black;
 	font-family: Montserrat;
-	padding-left: 104px;
+	padding-left: 88px;
+	padding-right: 64px;
+
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-flex-wrap:nowrap;
+	-ms-flex-wrap:nowrap;
+	flex-wrap: nowrap; /* si un elemento no cabe lo pone por debajo*/
+
+	-webkit-flex-direction: column;  /*direccion del acomodo de las cajas*/
+	-ms-flex-direction: column;
+	flex-direction: column;
+
+	-webkit-justify-content:flex-start; 
+	-ms-flex-pack:flex-start;
+	justify-content:flex-start;
+	
+	-webkit-align-items: flex-end; /*alinea los elementos al centro de contenedor*/
+	-ms-flex-align: flex-end;
+	align-items: flex-end;
+}
+
+.formProfesionista{
+	/*border: 1px solid blue;*/
+	width: 100%;
+	height: 100%;
+	color: black;
+	font-family: Montserrat;
+	padding-left: 88px;
 	padding-right: 64px;
 
 	display: -webkit-flex;
@@ -1218,17 +1489,17 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 	width: 100%;
 	padding-top: 8px;
 	padding-bottom: 6px;
-	background: white;
 	text-decoration: none;
 	text-align: center;
 	line-height: 40px;
-	background: #1D6C67;
+	background: transparent;
+	border: 2px solid  #ED6060;
 	border-radius: 25px 25px 25px 25px;
 	cursor: pointer;
 	font-family: Montserrat;
 	font-size: 18px;
 	letter-spacing: 4px;
-	color: white;
+	color:  #ED6060;
 	transition: all 250ms ease-in-out;
 }
 
@@ -1236,8 +1507,9 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 	background: #DDB446;
 }
 
+/*------empieza la caja 2--------*/
 #box2{
-	width: 100%;
+	width: 90%;
 	height: 100%;
 	
 	margin-right: 80px;
@@ -1277,11 +1549,10 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 
 hr.style3 {
 	width: 100%;
-	border-top: 2px solid #D0D0D0;
+	border-top: 2px solid #C6C3C7;
 	margin-top: 0px;
 	margin-bottom: 48px;
 }
-
 
 #clientes{
 	width: 100%;
