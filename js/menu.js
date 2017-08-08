@@ -31,7 +31,6 @@ $(document).ready(function () {
 		$('.txtProfesionista').toggleClass('txtProfesionistaRojo');
 		$('.sliderEmpresa').toggleClass('gray');
 		$('.sliderProfesionista').toggleClass('red');
-	
 		$('.ulForm').toggleClass('ulFormSlider');
 
 	});
@@ -41,7 +40,6 @@ $(document).ready(function () {
 		$('.txtProfesionista').toggleClass('txtProfesionistaRojo');
 		$('.sliderEmpresa').toggleClass('gray');
 		$('.sliderProfesionista').toggleClass('red');
-		
 		$('.ulForm').toggleClass('ulFormSlider');
 
 	});

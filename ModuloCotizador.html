@@ -22,9 +22,9 @@
 		smoothScroll.init({
 			selector: '[data-scroll]', // nombre
 			selectorHeader: null, // Fixed header selector (must use a valid CSS selector)
-			speed: 1000, // velocidad de llegada
+			speed: 700, // velocidad de llegada
 			easing:'easeInOutCubic',
-			offset: 0, // Distancia de pixeles abajo
+			offset: 80, // Distancia de pixeles abajo
 			callback: function (anchor, toggle) {} // Callback to run after setting active link
 		});
 	</script>
@@ -264,12 +264,14 @@
 			<div id="clientes">
 				<div id="txtClientes">Algunos de nuestros clientes
 				</div>
-				<div id="clientesImg">
+				<div class="clientesImg">
 					<img src="imgCotizador/Recursos_programación/Look me app.png" id="imgLook">
 					<img src="imgCotizador/Recursos_programación/suenan_todos.png" class="imgClientes">
 					<img src="imgCotizador/Recursos_programación/Dr juan riestra.png" class="imgClientes">
+				</div>
+				<div class="clientesImg">
 					<img src="imgCotizador/Recursos_programación/Radical Nutrition.png" id="imgRadical">
-					<!-- <img src="imgCotizador/Recursos_programación/Intermed.png" id="imgInter"> -->
+					<img src="imgCotizador/Recursos_programación/Intermed.png" id="imgInter">
 				</div>
 			</div>
 		</div>
@@ -280,16 +282,17 @@
 	<!--inicio de pie de pagina-->
 	<footer>
 		<div id="redes">
-			<img src="imgCotizador/Recursos_programación/Fb.png" class="imgPie" id="fb">
-			<img src="imgCotizador/Recursos_programación/Behance.png" class="imgPie" id="bh">
-			<img src="imgCotizador/Recursos_programación/instagram.png" class="imgPie" id="inst">
+			<img src="imgCotizador/Recursos_programación/iconofooter behance.png" class="imgPie" id="bh">
+			<img src="imgCotizador/Recursos_programación/iconofooter linkedin.png" class="imgPie" id="li">
+			<img src="imgCotizador/Recursos_programación/iconofooter facebook.png" class="imgPie" id="fb">
+			<img src="imgCotizador/Recursos_programación/iconofooter instagram.png" class="imgPie" id="inst">
 		</div>
 		<div id="copy">
 			<div id="txtCopy">Copyright &copy; AORI. &nbsp; &nbsp;Todos los Derechos Reservados.</div>
 			<div id="aviso">Aviso de privacidad</div>
 		</div>
 		<div id="footerLogo">
-			<img src="imgCotizador/Recursos_programación/Logo_black.png" id="imgAori">
+			<img src="imgCotizador/Recursos_programación/LOGO.png" id="imgAori">
 		</div>
 	</footer>
 	<!--fin de pie de pagina-->

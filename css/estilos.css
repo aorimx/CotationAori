@@ -1183,7 +1183,7 @@ hr.style2:after {
 	content: 'CONTÁCTANOS';
 	padding: 0 32px;
 	background: white;
-	color: black;
+	color: #4A4A4A;
 	font-size: 32px;
 	font-family: Montserrat-li;
 }
@@ -1396,7 +1396,7 @@ hr.red{
 	list-style: none;
 	flex-direction: column;
 	flex-wrap: wrap;
-	transition: all 1s;
+	transition: all 0.5s;
 	
 } 
 
@@ -1509,9 +1509,10 @@ hr.red{
 
 /*------empieza la caja 2--------*/
 #box2{
-	width: 90%;
-	height: 100%;
 	
+	width: 88%;
+	height: 100%;
+	padding-top: 104px;
 	margin-right: 80px;
 	margin-top: 32px;
 	
@@ -1539,24 +1540,23 @@ hr.red{
 }
 
 #anuncio{
-	width: 100%;
+	width: 75%;
 	padding-right: 32px;
-	height: 192px; 
-	color: #D0D0D0;
-	font-size: 36px;
-	margin-bottom: 16px;
+	height: auto; 
+	color: #4A4A4A;
+	font-size: 22px;
 }
 
 hr.style3 {
 	width: 100%;
 	border-top: 2px solid #C6C3C7;
-	margin-top: 0px;
+	margin-top: 16px;
 	margin-bottom: 48px;
 }
 
 #clientes{
 	width: 100%;
-	height: 232px;
+	height: 100%;
 	font-family: Montserrat;
 
 	display: -webkit-flex;
@@ -1586,17 +1586,18 @@ hr.style3 {
 	text-transform: uppercase;
 }
 
-#clientesImg{
+.clientesImg{
 	width: 100%;
-	height: 152px;
+	height: 100%;
 	
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
+	padding-bottom: 24px;
 
 	-webkit-flex-wrap:nowrap;
 	-ms-flex-wrap:nowrap;
-	flex-wrap: nowrap; /* si un elemento no cabe lo pone por debajo*/
+	flex-wrap: wrap; /* si un elemento no cabe lo pone por debajo*/
 
 	-webkit-flex-direction: row;  /*direccion del acomodo de las cajas*/
 	-ms-flex-direction: row;
@@ -1604,26 +1605,28 @@ hr.style3 {
 
 	-webkit-justify-content:space-between; 
 	-ms-flex-pack:space-between;
-	justify-content:space-between;
+	justify-content:space-around;
+
+	align-items: flex-start;
 }
 
 #imgLook{
 	width: auto;
-	height: 72px;
+	height: 80px;
 	margin-top: 40px;
 	margin-right: 8px;
 }
 
 #imgInter{
 	width: auto;
-	height: 64px;
+	height: 80px;
 	margin-top: 40px;
 	margin-left: 8px;
 }
 
 .imgClientes{
 	width: auto;
-	height: 72px;
+	height: 80px;
 	margin-top: 40px;
 	margin-right: 8px;
 	margin-left: 8px;
@@ -1631,7 +1634,7 @@ hr.style3 {
 
 #imgRadical{
 	width: auto;
-	height: 56px;
+	height: 80px;
 	margin-top: 40px;
 	margin-right: 8px;
 	margin-left: 8px;
@@ -1847,7 +1850,7 @@ PANTALLA DE TABLET - SMALL (sm)
 footer{
 	width: 100%;
 	height: 96px;
-	background: orange;
+	background: #ED6060;
 
 	
 	display: -webkit-flex;
@@ -1900,6 +1903,11 @@ footer{
 	
 }
 
+#li{
+	width: 16px;
+	height: 16px
+}
+
 #fb{
 	width: 8px;
 	height: 16px;
@@ -1949,7 +1957,7 @@ footer{
 
 #aviso{
 	width: 168px;
-	color: black;
+	color: 	#E0DDE1;
 	font-family: Montserrat;
 }
 
