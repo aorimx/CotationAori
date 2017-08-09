@@ -73,7 +73,7 @@ header{
 hr.style15 {
 	margin-top: 40px;
 	width: 100%;
-	border-top: 2px solid orange;
+	border-top: 2px solid #78B2CF;
 	text-align: center;
 }
 
@@ -83,7 +83,7 @@ hr.style15:after {
 	content: 'Cotización';
 	padding: 0 56px;
 	background: white;
-	color: orange;
+	color: #78B2CF;
 	font-size: 40px;
 	font-family: Montserrat;
 }
@@ -127,7 +127,7 @@ hr.style15:after {
 #liTittle{
 	width: 944px;
 	height: 100%;
-	background: red;
+	background: #78B2CF;
 	text-decoration: none;
 	text-align: center;
 	line-height: 40px;	
@@ -202,7 +202,7 @@ hr.style15:after {
 	width: 24px;
 	height: 24px;
 	line-height: 4px;
-	background: orange ;
+	background: #78B2CF;
 	color: white;
 	font-family: Montserrat;
 	font-size: 24px;
@@ -237,14 +237,14 @@ hr.style15:after {
 	text-align: center;
 	text-transform: uppercase;
 	line-height: 40px;
-	border: 2px solid orange;	
+	border: 2px solid #78B2CF;
 	border-radius: 25px 25px 25px 25px;
 	cursor: pointer;
 	font-family: Montserrat-li;
 	font-size: 18px;
 	font-weight: bold;
 	letter-spacing: 2px;
-	color: orange;
+	color: #78B2CF;
 
 }
 
