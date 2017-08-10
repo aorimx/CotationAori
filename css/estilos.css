@@ -208,7 +208,7 @@ body{
 }
 
 .aBanner:hover{
-	color: #DDB446;	
+	color: #78B2CF;
 }
 
 
@@ -289,9 +289,6 @@ body{
 
 }
 
-#btnSolicitar:hover{
-	background:  #DDB446;
-}
 
 /*=============================================
 PANTALLA DE PHONES - EXTRA SMALL (xs)
@@ -420,9 +417,7 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 		
 	}
 
-	#btnSolicitar:active{
-		background:  #DDB446;
-	}
+	
 
 }
 
@@ -813,8 +808,9 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 }
 
 .btnSec2:hover{
-	background: #DDB446;
-	border: 1px solid #DDB446;
+	border: 0;
+	background: #78B2CF;
+	color: white;
 }
 
 .txtVerMas1{
@@ -932,8 +928,9 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 }
 
 #btnProducto2:hover{
-	background: #DDB446;
-	border:#DDB446;
+	border: 0;
+	background: #78B2CF;
+	color: white;
 }
 
 .txtVerMas2{
@@ -1503,7 +1500,9 @@ hr.red{
 }
 
 #btnEnviar:hover{
-	background: #DDB446;
+	border: 0;
+	background: #78B2CF;
+	color: white;
 }
 
 /*------empieza la caja 2--------*/
