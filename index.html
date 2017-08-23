@@ -2,7 +2,9 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	
+	
 	<link rel="icon" href="http://aori.mx/img/favicon.png" type="image/png">
 	<title>Aori | Cotizador</title>
 
@@ -112,11 +114,11 @@
 		</div>
 		<hr class="lineBeneficios">
 		<div class="beneficios">
-			<div class="txtContenedor2y4">
+			<div class="txtContenedor2y4 orden0">
 				<h1 class="titulo">Rápido</h1>
 				<p class="txtBeneficios">Esta herramienta te permitirá recibir en tu correo de manera inmediata, lo que hayas señalado en nuestro cotizador. En caso de contratarnos, tendrás pronta respuesta de los avances de tu proyecto y entrega total del mismo.</p>
 			</div>
-			<img src="imgCotizador/Recursos_programación/iconRapido.png" class="imagenes imgRapYBuen">
+			<img src="imgCotizador/Recursos_programación/iconRapido.png" class="imagenes imgRapYBuen orden1">
 		</div>
 		<hr class="lineBeneficios">
 		<div class="beneficios">
@@ -128,12 +130,12 @@
 		</div>
 		<hr class="lineBeneficios">
 		<div class="beneficios">
-			<div class="txtContenedor2y4">
+			<div class="txtContenedor2y4 orden0">
 				<h1 class="titulo">Buen Precio</h1>
 				<p class="txtBeneficios">Todos los productos que ofrecemos a través de este cotizador, han sido probados, validados y garantizados por AORI Brand Media Consulting ® brindándote en un corto periodo de tiempo una solución digital de primer nivel.</p>
 				<p class="txtBeneficios">¡Costo – Beneficio, somos tu mejor opción!</p>
 			</div>
-			<img src="imgCotizador/Recursos_programación/iconBuenPrecio.png" class="imagenes imgRapYBuen">
+			<img src="imgCotizador/Recursos_programación/iconBuenPrecio.png" class="imagenes imgRapYBuen orden1">
 		</div>			
 	</section>
 	<!--fin de la parte superior-->
@@ -225,7 +227,27 @@
 								<option>Tienda en linea</option>
 							</select>
 
-							<input id="btnEnviar" type="submit" value="CONTINUAR" name="">
+							<div class="caracteristicas">
+								<label id="labelCarac" for="correo">Características a agregar en la presentación</label>
+
+								<label class="labelCB"><input class="todo-item-done" type="checkbox" name="cb1" value="Not Selecte">&nbsp; Not Selected</label>
+								<label class="labelCB"><input class="todo-item-done" type="checkbox" name="cb2" value="Slectedg">&nbsp; Slectedg</label>
+								<label class="labelCB"><input class="todo-item-done" type="checkbox" name="cb3" value="Indeterminate">&nbsp; Indeterminate</label>
+								<label class="labelCB"><input class="todo-item-done" type="checkbox" name="cb4" value="Disabled">&nbsp; Disabled</label>
+								<label class="labelCB"><input class="todo-item-done" type="checkbox" name="cb5" value="">&nbsp; Disabled Selected</label>
+
+								<ul id="todo-list" class="todo-list">
+								</ul>
+								
+								<label id="lbCarac">Agregar nueva caracteristica</label>
+								<div class="inputCaracteristica">
+									<input id="newItem" class="newItem" type="text" name="">
+									<input id="addItem" class="addItem" type="button" name="" value="+" color="white">
+								</div>
+								<input class="btnEnviar" type="submit" value="Enviar" name="">
+							</div>
+
+							<input class="btnContinuar" type="button" value="CONTINUAR" name="">
 						</form>
 					</li>
 					<li>	
@@ -249,7 +271,7 @@
 								<option>Tienda en linea</option>
 							</select>
 
-							<input id="btnEnviar" type="submit" value="CONTINUAR" name="">
+							<input class="btnEnviar" type="submit" value="CONTINUAR" name="">
 						</form>
 					</li>	
 				</ul>	
@@ -265,13 +287,9 @@
 				<div id="txtClientes">Algunos de nuestros clientes
 				</div>
 				<div class="clientesImg">
-					<img src="imgCotizador/Recursos_programación/Look me app.png" id="imgLook">
-					<img src="imgCotizador/Recursos_programación/suenan_todos.png" class="imgClientes">
-					<img src="imgCotizador/Recursos_programación/Dr juan riestra.png" class="imgClientes">
-				</div>
-				<div class="clientesImg">
-					<img src="imgCotizador/Recursos_programación/Radical Nutrition.png" id="imgRadical">
 					<img src="imgCotizador/Recursos_programación/Intermed.png" id="imgInter">
+					<img src="imgCotizador/Recursos_programación/suenan_todos.png" id="imgSuenan">
+					<img src="imgCotizador/Recursos_programación/hereYouWin.png" id="imgHere">
 				</div>
 			</div>
 		</div>
@@ -301,7 +319,8 @@
 	<!--jQuery para el scroll de la cotizacion-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
-	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src='js/addCaracteristica.js'></script>
 
 </body>
 </html>

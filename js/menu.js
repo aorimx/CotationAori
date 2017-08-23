@@ -43,5 +43,11 @@ $(document).ready(function () {
 		$('.ulForm').toggleClass('ulFormSlider');
 
 	});
+
+	$('.btnContinuar').on('click', function () {
+		$('.caracteristicas').toggleClass('verCaracteristicas');
+		$('.btnContinuar').toggleClass('caracteristicas');
+		
+	});
 	
 });

@@ -568,8 +568,8 @@ PANTALLA DE TABLET - SMALL (sm)
 	-ms-flex-direction: row;
 	flex-direction: row;
 
-	-webkit-justify-content:center; 
-	-ms-flex-pack:center;
+	-webkit-justify-content: space-around; 
+	-ms-flex-pack: space-around;
 	justify-content: space-around;
 
 	-webkit-align-items: center; /*alinea los elementos al centro de contenedor*/
@@ -595,6 +595,7 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 		-webkit-justify-content:center; 
 		-ms-flex-pack:center;
 		justify-content: center;
+
 		width: 100%;
 		height: 100%;
 	}
@@ -604,6 +605,59 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 		margin-left: 0px;
 		margin-top: 16px;
 		margin-bottom: 24px;
+
+		-webkit-flex-direction: column;  /*direccion del acomodo de las cajas*/
+		-ms-flex-direction: column;
+		flex-direction: column;
+
+		-webkit-justify-content:center; 
+		-ms-flex-pack:center;
+		justify-content: center;
+
+		-webkit-align-items: center; /*alinea los elementos al centro de contenedor*/
+		-ms-flex-align: center; 
+		align-items: center; 
+
+	}
+		
+	.txtContenedor1y3{
+			width: 100%;
+			padding-top: 8px;
+			padding-bottom: 6px;
+	}
+
+	.txtContenedor2y4{
+			width: 100%;
+			margin-left: 0px;
+			padding-left: 0px;
+			padding-top: 8px;
+			padding-bottom: 6px;
+	}
+
+	.imgRapYBuen{
+		padding-right: 0px;
+		margin-right: 0px;
+	}
+
+	.imgPerYPro{
+		padding-left: 0px;
+	}
+
+	.txtBeneficios{
+		width: 100%;
+		text-align: center;
+	}
+
+	.titulo{
+		text-align: center;
+	}
+
+	.orden0{
+		order: 2;
+	}
+
+	.orden1{
+		order: 1;
 	}
 }
 
@@ -623,10 +677,15 @@ PANTALLA DE TABLET - SMALL (sm)
 	}
 
 	.beneficios{
-		width: 40%;
+		width: 100%;
 		
 		margin-bottom: 40px;
 		margin-top: 24px;
+	}
+
+	.txtBeneficios{
+		width: 100%;
+		
 	}
 }
 
@@ -1057,14 +1116,18 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 		height: 100%;
 	}
 
-	#producto1{
+	.bgProducto1{
+		height: 600px;
+	}
+
+	.producto1{
 		-webkit-align-items: center; /*alinea los elementos al centro de contenedor*/
 		-ms-flex-align: center; 
 		align-items: center;
 	}
 
-	#producto1 h2{
-		padding-top: 48px;
+	.producto1 h2{
+		padding-top: 16px;
 		margin:0;
 		margin-left: 0px;
 		text-align: center;
@@ -1073,7 +1136,7 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 		
 	}
 
-	#producto1 p{
+	.producto1 p{
 		margin-top: 40px;
 		text-align: center;
 		padding-right: 16px;
@@ -1084,18 +1147,13 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 		width: 100%;
 	}
 
-	#producto1 ul li{
-		height: 100%;
-		margin:0;
-	}
-
-	#producto2{
+	.producto2{
 		-webkit-align-items: center; /*alinea los elementos al centro de contenedor*/
 		-ms-flex-align: center; 
 		align-items: center;
 	}
 
-	#producto2 h2{
+	.producto2 h2{
 		padding-top: 48px;
 		margin:0;
 		margin-left: 0px;
@@ -1105,7 +1163,7 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 		
 	}
 
-	#producto2 p{
+	.producto2 p{
 		margin-top: 40px;
 		text-align: center;
 		padding-right: 16px;
@@ -1116,18 +1174,13 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 		width: 100%;
 	}
 
-	#producto2 ul li{
-		height: 100%;
-		margin:0;
-	}
-
-	#producto3{
+	.producto3{
 		-webkit-align-items: center; /*alinea los elementos al centro de contenedor*/
 		-ms-flex-align: center; 
 		align-items: center;
 	}
 
-	#producto3 h2{
+	.producto3 h2{
 		padding-top: 48px;
 		margin:0;
 		margin-left: 0px;
@@ -1137,7 +1190,7 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 		
 	}
 
-	#producto3 p{
+	.producto3 p{
 		margin-top: 40px;
 		text-align: center;
 		padding-right: 16px;
@@ -1148,10 +1201,6 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 		width: 100%;
 	}
 
-	#producto3 ul li{
-		height: 100%;
-		margin:0;
-	}
 }
 
 /*=============================================
@@ -1226,6 +1275,21 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 	align-items: flex-start; 
 }
 
+.caracteristicas{
+	display: none;
+}
+
+.verCaracteristicas{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-self: flex-start;
+}
+.inputCaracteristica{
+	display: flex;
+	flex-direction: row;
+}
 .formularios{
 	/*border: 3px solid red;*/
 	margin-top: 32px;
@@ -1375,29 +1439,32 @@ hr.red{
 .formContainer{
 	/*border: 3px solid red;*/
 	width: 100%;
-	height: 480px;
-	overflow: hidden;
+	height: 100%;
 	color: black;
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
+	overflow: hidden;
 	
 }
 
 .ulForm{
+
 	margin:0;
-	width: 100%;
+	width: 616px;
 	height: 100%;
 	display: flex;
 	list-style: none;
-	flex-direction: column;
-	flex-wrap: wrap;
+	flex-direction: row;
+	flex-wrap: nowrap;
 	transition: all 0.5s;
+	
 	
 } 
 
 .ulForm li{
 	width: 100%;
+	
 }
 
 .ulFormSlider{
@@ -1406,7 +1473,7 @@ hr.red{
 
 .formularioEmpresa{
 	/*border: 1px solid blue;*/
-	width: 100%;
+	width: 616px;
 	height: 100%;
 	color: black;
 	font-family: Montserrat;
@@ -1436,7 +1503,7 @@ hr.red{
 
 .formProfesionista{
 	/*border: 1px solid blue;*/
-	width: 100%;
+	width: 616px;
 	height: 100%;
 	color: black;
 	font-family: Montserrat;
@@ -1479,7 +1546,7 @@ hr.red{
 	font-family: Montserrat;
 }
 
-#btnEnviar{
+.btnEnviar{
 	margin-top: 32px;
 	
 	width: 100%;
@@ -1499,10 +1566,101 @@ hr.red{
 	transition: all 250ms ease-in-out;
 }
 
-#btnEnviar:hover{
+.btnEnviar:hover{
 	border: 0;
 	background: #78B2CF;
 	color: white;
+}
+
+.btnContinuar{
+	margin-top: 32px;
+	
+	width: 100%;
+	padding-top: 8px;
+	padding-bottom: 6px;
+	text-decoration: none;
+	text-align: center;
+	line-height: 40px;
+	background: transparent;
+	border: 2px solid  #78B2CF;
+	border-radius: 25px 25px 25px 25px;
+	cursor: pointer;
+	font-family: Montserrat;
+	font-size: 18px;
+	letter-spacing: 4px;
+	color:  #78B2CF;
+	transition: all 250ms ease-in-out;
+}
+
+.btnContinuar:hover{
+	border: 0;
+	background: #78B2CF;
+	color: white;
+}
+
+
+
+.labelCB{
+	width: 100%;
+	height: 100%;
+}
+
+#labelCarac{
+	width: 100%;
+	height: 100%;
+	margin-top: 32px;
+	margin-bottom: 8px;
+}
+
+#addItem{
+	margin-top: 8px;
+	margin-left: 8px;
+	border-radius: 100%;
+	width: 32px;
+	height: 32px;
+	line-height: 4px;
+	background: #78B2CF;
+	color: white;
+	font-family: Montserrat;
+	font-size: 24px;
+	text-align: center;
+}
+
+#newItem{
+	margin-top: 8px;
+	width: 100%;
+	height: 32px;
+	border: 2px solid black;
+	padding-left: 16px;
+	padding-right: 16px;
+	color: black;
+	font-family: Montserrat;
+}
+
+#lbCarac{
+	margin-top: 16px;
+}
+
+
+.strike {
+  text-decoration: none;
+}
+
+.todo-item-done{
+	margin-bottom: 8px;
+}
+
+.todo-item-delete{
+	padding: 0;
+	border-radius: 100%;
+	width: 16px;
+	height: 16px;
+	background: red ;
+	color: white;
+	font-family: Montserrat;
+	line-height: 4px;
+	font-size: 16px;
+	text-align: center;
 }
 
 /*------empieza la caja 2--------*/
@@ -1588,10 +1746,11 @@ hr.style3 {
 	width: 100%;
 	height: 100%;
 	
+	
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
-	padding-bottom: 24px;
+	
 
 	-webkit-flex-wrap:nowrap;
 	-ms-flex-wrap:nowrap;
@@ -1603,39 +1762,27 @@ hr.style3 {
 
 	-webkit-justify-content:space-between; 
 	-ms-flex-pack:space-between;
-	justify-content:space-around;
+	justify-content:space-between;
 
 	align-items: flex-start;
 }
 
-#imgLook{
-	width: auto;
-	height: 80px;
-	margin-top: 40px;
-	margin-right: 8px;
-}
-
 #imgInter{
 	width: auto;
-	height: 80px;
+	height: auto;
 	margin-top: 40px;
-	margin-left: 8px;
 }
 
-.imgClientes{
+#imgSuenan{
 	width: auto;
-	height: 80px;
-	margin-top: 40px;
-	margin-right: 8px;
-	margin-left: 8px;
+	height: 88px;
+	margin-top: 24px;
 }
 
-#imgRadical{
+#imgHere{
 	width: auto;
-	height: 80px;
-	margin-top: 40px;
-	margin-right: 8px;
-	margin-left: 8px;
+	height: 120px;
+	margin-top: 8px;
 }
 
 /*=============================================
@@ -1791,14 +1938,8 @@ PANTALLA DE TABLET - SMALL (sm)
 		align-items: center; 
 	}
 
-	#formulario{
-		-webkit-justify-content:center; 
-		-ms-flex-pack:center;
-		justify-content:center;
-		
-		-webkit-align-items: center; /*alinea los elementos al centro de contenedor*/
-		-ms-flex-align: center;
-		align-items: center;
+	.formularios{
+		margin-bottom: 32px;
 	}
 
 	.label{
@@ -1815,7 +1956,7 @@ PANTALLA DE TABLET - SMALL (sm)
 
 	#box2{
 		margin-right: 0px;
-
+		padding-top: 0px;
 		-webkit-justify-content:flex-start; 
 		-ms-flex-pack:center;
 		justify-content:center;
@@ -1832,11 +1973,20 @@ PANTALLA DE TABLET - SMALL (sm)
 	}
 
 	#clientes{
+		-webkit-justify-content:center; 
+		-ms-flex-pack:center;
+		justify-content:center;
+
 		-webkit-align-items: center; /*alinea los elementos al centro de contenedor*/
 		-ms-flex-align: center; 
 		align-items: center;
+
 		padding-left: 56px;
 		padding-right: 56px;
+	}
+
+	#txtClientes{
+		text-align: center;
 	}
 }
 
@@ -1998,7 +2148,6 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 	footer{
 	
 		height: 240px;
-		background: orange;
 
 		-webkit-flex-direction: column;  /*direccion del acomodo de las cajas*/
 		-ms-flex-direction: column;
@@ -2069,8 +2218,6 @@ PANTALLA DE TABLET - SMALL (sm)
 	footer{
 	
 		height: 184px;
-		background: orange;
-
 		-webkit-flex-direction: column;  /*direccion del acomodo de las cajas*/
 		-ms-flex-direction: column;
 		flex-direction: column;
