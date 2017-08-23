@@ -16,6 +16,10 @@
 
 	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+	<!--pdf-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.debug.js"></script>
+	<script src='js/pdfGenerator.js'></script>
 	
 
 	<!--scroll-->
@@ -204,7 +208,7 @@
 			<div class="formContainer">
 				<ul class="ulForm">
 					<li>
-						<form class="formularioEmpresa">
+						<form class="formularioEmpresa" dataType = 'text' method="POST" contentType = 'application/pdf' action='http://localhost/quotation/app/solicitudes/solicitud.php'>
 							<label class="label" for="nombre">¿Cuál es tu nombre?</label>
 							<input class="input" id="inNombre" type="text" value="" required>
 
@@ -270,8 +274,27 @@
 								<option>Pagina con blog</option>
 								<option>Tienda en linea</option>
 							</select>
+							<div class="caracteristicas2">
+								<label id="labelCarac" for="correo">Características a agregar en la presentación</label>
 
-							<input class="btnEnviar" type="submit" value="CONTINUAR" name="">
+								<label class="labelCB"><input class="todo-item-done" type="checkbox" name="cb1" value="Not Selecte">&nbsp; Not Selected</label>
+								<label class="labelCB"><input class="todo-item-done" type="checkbox" name="cb2" value="Slectedg">&nbsp; Slectedg</label>
+								<label class="labelCB"><input class="todo-item-done" type="checkbox" name="cb3" value="Indeterminate">&nbsp; Indeterminate</label>
+								<label class="labelCB"><input class="todo-item-done" type="checkbox" name="cb4" value="Disabled">&nbsp; Disabled</label>
+								<label class="labelCB"><input class="todo-item-done" type="checkbox" name="cb5" value="">&nbsp; Disabled Selected</label>
+
+								<ul id="todo-list" class="todo-list">
+								</ul>
+								
+								<label id="lbCarac">Agregar nueva caracteristica</label>
+								<div class="inputCaracteristica">
+									<input id="newItem" class="newItem" type="text" name="">
+									<input id="addItem" class="addItem" type="button" name="" value="+" color="white">
+								</div>
+								<input class="btnEnviar" type="submit" value="Enviar" name="">
+							</div>
+
+							<input class="btnContinuar2" type="button" value="CONTINUAR" name="">
 						</form>
 					</li>	
 				</ul>	
@@ -321,6 +344,8 @@
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src='js/addCaracteristica.js'></script>
+
+	
 
 </body>
 </html>
