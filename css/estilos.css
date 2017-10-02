@@ -1201,6 +1201,13 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 		width: 100%;
 	}
 
+	.btnSec2{
+		margin-left: 0;
+		margin-top: 0;
+		padding-bottom: 18px;
+
+	}
+
 }
 
 /*=============================================
@@ -1812,6 +1819,7 @@ hr.style3 {
 	width: auto;
 	height: 120px;
 	margin-top: 8px;
+	
 }
 
 /*=============================================
