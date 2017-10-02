@@ -8,11 +8,11 @@ $data = array();
 }
 
 
-$lista="";
+/*$lista="";
 foreach($_POST as $key => $value){
    if(strpos($key,"item-done"))
        $lista.="<li>".$value."</li>";
-}
+}*/
 
 	$nombre =  $data[0];
 	$empresa = $data[1];
@@ -20,7 +20,7 @@ foreach($_POST as $key => $value){
 
 
 
-	if (isset($_POST['cb1'])){
+	/*if (isset($_POST['cb1'])){
   		$elemnto1 = htmlspecialchars('Caracteristica');
 	}
 
@@ -38,7 +38,7 @@ foreach($_POST as $key => $value){
 
 	if (isset($_POST['cb5'])){
   		$elemnto5 = htmlspecialchars('CaracteristicaxD');
-	}
+	}*/
 
 	
 	$html = '
@@ -70,15 +70,7 @@ foreach($_POST as $key => $value){
 				<p class="pCoti">Como profesionista y empresario, comprendo el tedio que significa el disponer de una herramienta digital que no funcione adecuadamente y que genere más problemas que soluciones. Justamente por ello, pongo a tu disposición la siguiente cotización que te brindara tranquilidad y resultados.</p>
 			</div>
 			<p class="pType">'.$typePage.':</p>
-			<div class="lista">
-					<ul class="listElement">
-						<li>'.$elemnto1.'</li>
-						<li>'.$elemnto2.'</li>
-						<li>'.$elemnto3.'</li>
-						<li>'.$elemnto4.'</li>
-						'.$lista.'
-					</ul>
-			</div>
+		
 			<div class="divFirma">
 				<p class="pFirma">Quedo a tus órdenes,</p>
 				<p class="pFirma">A T E N T A M E N T E,</p>
