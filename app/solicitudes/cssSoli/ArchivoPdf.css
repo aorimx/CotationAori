@@ -40,7 +40,7 @@ header{
 	margin-top: 40px;
 	margin-right: 40px;
 	margin-left: 40px;
-	border: 1px solid blue;
+	
 }
 
 #logo{
@@ -81,15 +81,16 @@ header{
 #divSolicitud{
 	width: 696px;
 	height: 752px;
-	border: 1px solid black;
+	
 	margin-left: 56px;
 	
 }
 
 .divFirma{
+	margin-top: 160px;
 	width: 696px;
 	height: 40px;
-	border: 1px solid black;
+
 	
 }
 
@@ -104,6 +105,15 @@ header{
 	margin-bottom: 16px;
 	padding: 0px;
 }
+
+.pListA{
+	margin-top: 0;
+	margin-bottom: 8px;
+	padding: 0px;
+	font-weight: bold;
+	margin-left: 24px;
+}
+
 
 .pList{
 	margin-bottom: 16px;
@@ -159,14 +169,14 @@ footer{
 	bottom: 0px;
 	overflow: hidden;
 	width: 1008px;
-	border: 1px solid red;
+
 	
 }
 
 #boxDirection{
 	display: block;
 	float: left;
-	border: 1px solid yellow;
+	
 	width: 388px;
 	height: 72px;
 }
@@ -185,7 +195,7 @@ footer{
  }
 
  #txtDirection{
- 	border: 2px solid green;
+ 	
  	display: block;
 	float: right;
 	width: 312px;
@@ -204,7 +214,7 @@ footer{
 	width: 312px;
 	height: auto;
 	background: gray;
-	border: 1px solid magenta;
+	
 	
 }
 

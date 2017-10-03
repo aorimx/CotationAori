@@ -2,10 +2,6 @@
 	require_once('../../vendor/autoload.php');
 
 
-$data = array();
-	foreach ($_POST as $key => $value){
-		$data[] = $value;
-}
 
 
 /*$lista="";
@@ -25,9 +21,8 @@ foreach($_POST as $key => $value){
 	
 
 	
-	foreach ($_POST as $key => $value){ 
-			$typePage = $value; 
-		} 
+$typePage = $_POST['selectP'];
+
 
 
 	$html = '
@@ -57,12 +52,14 @@ foreach($_POST as $key => $value){
 			<div>
 				<p class="pList">AORI se especializa en el desarrollo de productos que cuenten con:</p>
 				<div class="lista">
-					
+					<p class="pListA"> Factibilidad Comercial</p>
+					<p class="pListA"> Facilidad de Uso y</p>
+					<p class="pListA"> Factibilidad de Navegación</p>
 				</div>
 
 				<p class="pCoti">Como profesionista y empresario, comprendo el tedio que significa el disponer de una herramienta digital que no funcione adecuadamente y que genere más problemas que soluciones. Justamente por ello, pongo a tu disposición la siguiente cotización que te brindara tranquilidad y resultados.</p>
 			</div>
-			<p class="pType">'.$typePage.':</p>
+			<p class="pType">'.$typePage.'</p>
 		
 			<div class="divFirma">
 				<p class="pFirma">Quedo a tus órdenes,</p>
