@@ -1,5 +1,5 @@
 <?php
-	require_once('../lib/pdf/mpdf.php');
+	require_once('../../vendor/autoload.php');
 
 
 $data = array();
@@ -13,34 +13,23 @@ foreach($_POST as $key => $value){
    if(strpos($key,"item-done"))
        $lista.="<li>".$value."</li>";
 }*/
+	$typeUser = $_POST['typeUser'];
+	$nombre = $_POST['nombre'];
+	$stringE= 'empresario';
+	$empresa = $_POST['empresaName'];
+	$puesto = $_POST['puestoEmpresa'];
+	$pProfesion = $_POST['profesionNombre'];
 
-	$nombre =  $data[0];
-	$empresa = $data[1];
-	$typePage =  $data[4];
-
-
-
-	/*if (isset($_POST['cb1'])){
-  		$elemnto1 = htmlspecialchars('Caracteristica');
-	}
-
-	if (isset($_POST['cb2'])){
-  		$elemnto2 = htmlspecialchars('Caracteristica2');
-	}
-
-	if (isset($_POST['cb3'])){
-  		$elemnto3 = htmlspecialchars('Caracteristica diferente');
-	}
-
-	if (isset($_POST['cb4'])){
-  		$elemnto4 = htmlspecialchars('Caracteristica ejemplo');
-	}
-
-	if (isset($_POST['cb5'])){
-  		$elemnto5 = htmlspecialchars('CaracteristicaxD');
-	}*/
+	$pEmpre = '<p class="pNombre">Empresa: '.$empresa.'</p>';
+	$prof = '<p class="pNombre">Profesion: '.$pProfesion.'</p>';
+	
 
 	
+	foreach ($_POST as $key => $value){ 
+			$typePage = $value; 
+		} 
+
+
 	$html = '
 <body>
 	
@@ -50,21 +39,25 @@ foreach($_POST as $key => $value){
 	<div class="fecha">
 		<p class="pFecha">Fecha: '.date("d/m/Y").' &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</p>
 		<p class="pFecha">Lugar: Guadalajara, Jalisco, México.</p>
-		<p class="pNombre">Con Atención a: '.$nombre.'</p>
-		<p class="pNombre">Puesto / Ocupación:</p>
-		<p class="pNombre">Empresa: '.$empresa.'</p>
-	</div>
+		<p class="pNombre">Con Atención a: '.$nombre.'</p>';
+		if($typeUser=='empresario')
+		{
+			$html.='<p class="pNombre">Puesto / Ocupación: '.$puesto.'</p>'.$pEmpre;
+			
+		}
+		else{
+			$html.=$prof;
+		}
+		
+		
+	$html.='</div>
 	<div id="divSolicitud">
 			<p class="h1Style">Hola '.$nombre.', </p>
 			<p class="pStyle">A través de la presente cotización agradezco de antemano tu preferencia y me complace comentarte que está dentro de nuestro ADN, el querer colaborar en el desarrollo de plataformas digitales que impulsen la imagen y resultados de profesionistas o empresas en toda Latino América.</p>
 			<div>
 				<p class="pList">AORI se especializa en el desarrollo de productos que cuenten con:</p>
 				<div class="lista">
-					<ul class="listElement">
-						<li>Factibilidad Comercial</li>
-						<li>Facilidad de Uso y</li>
-						<li> Factibilidad de Navegación</li>
-					</ul>
+					
 				</div>
 
 				<p class="pCoti">Como profesionista y empresario, comprendo el tedio que significa el disponer de una herramienta digital que no funcione adecuadamente y que genere más problemas que soluciones. Justamente por ello, pongo a tu disposición la siguiente cotización que te brindara tranquilidad y resultados.</p>
