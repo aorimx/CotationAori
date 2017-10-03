@@ -411,7 +411,7 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 		margin-top: 24px;
 		margin-bottom: 0px;
 		line-height: 30px;
-		width: auto;
+		width: 80%;
 		height: auto;
 		font-size: 16px;
 		
@@ -1127,6 +1127,7 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 
 
 	.producto1{
+		height: 736px;
 		-webkit-align-items: center; /*alinea los elementos al centro de contenedor*/
 		-ms-flex-align: center; 
 		align-items: center;
@@ -1154,14 +1155,14 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 	}
 
 	.bgProducto2{
-		height: 800px;
+		height: 600px;
 	}
 
 	.producto2{
 		-webkit-align-items: center; /*alinea los elementos al centro de contenedor*/
 		-ms-flex-align: center; 
 		align-items: center;
-		height: 696px;
+		height: 496px;
 	}
 
 	.producto2 h2{
@@ -1192,13 +1193,13 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 
 
 	.bgProducto3{
-		height: 800px;
+		height: 640px;
 	}
 	.producto3{
 		-webkit-align-items: center; /*alinea los elementos al centro de contenedor*/
 		-ms-flex-align: center; 
 		align-items: center;
-		height: 696px;
+		height: 536px;
 	}
 
 	.producto3 h2{
@@ -1848,9 +1849,10 @@ hr.style3 {
 /*=============================================
 PANTALLA DE PHONES - EXTRA SMALL (xs)
 =============================================*/
-@media(max-width:767px){
+@media(max-width:396px){
 	#section3{
 		height: 100%;
+		width: 100%;
 		margin-bottom: 16px;
 
 		-webkit-flex-direction: column;  /*direccion del acomodo de las cajas*/
@@ -1865,6 +1867,47 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 		-ms-flex-align: center; 
 		align-items: center; 
 	}
+
+	.formularios{
+		align-items: center;
+	}
+	.opciones{
+		width: 100%;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.txtOpciones{
+		width: 90%;
+		font-size: 17px;
+
+	}
+	.linesOpciones{
+		width: 90%;
+	}
+	.formContainer{
+		justify-content: center;
+		margin-bottom: 0px;
+	}
+
+	.formularioEmpresa{
+		padding-left: 0px;
+		padding-right: 0px;
+		width: 288px;
+	}
+.formProfesionista{
+	margin-left: 14%;
+	padding-right: 0px;
+	width: 288px;
+	padding-left: 24px;
+}
+	.ulForm{
+		width: 90%;
+	}
+
+	.ulFormSlider{
+		margin-left: -200%;
+	}
+
 
 	#formulario{
 		-webkit-justify-content:center; 
@@ -1894,7 +1937,179 @@ PANTALLA DE PHONES - EXTRA SMALL (xs)
 	#box2{
 		
 		margin-right: 0px;
+		padding-top: 0px;
+		-webkit-justify-content:center; 
+		-ms-flex-pack:center;
+		justify-content:center;
+		-webkit-align-items: center; /*alinea los elementos al centro de contenedor*/
+		-ms-flex-align: center; 
+		align-items: center;
+	}
+
+	#anuncio{
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		font-size: 34px;
+		margin-bottom: 16px;
+		padding: 0;
+	}
+
+
+	#clientes{
+		width: 100%;
+
+		-webkit-align-items: center; /*alinea los elementos al centro de contenedor*/
+		-ms-flex-align: center; 
+		align-items: center;
+
+		-webkit-justify-content:center; 
+		-ms-flex-pack:center;
+		justify-content:center;
+	}
+
+	#txtClientes{
+		text-align: center;
+		margin: 0px;
+	}
+
+	#clientesImg{
+		width: 100%;
+		height: 100%;
+		-webkit-flex-wrap:wrap;
+		-ms-flex-wrap:wrap;
+		flex-wrap: wrap; /* si un elemento no cabe lo pone por debajo*/
+
+		-webkit-flex-direction: row;  /*direccion del acomodo de las cajas*/
+		-ms-flex-direction: row;
+		flex-direction: row;
+	}
+
+	#imgLook{
+		width: 56px;
+		height: 56px;
+		margin-left: 32px;
+		margin-top: 40px;
+		margin-right: 8px;
+	}
+
+	#imgInter{
+		width: 80px;
+		height: 48px;
+		margin-top: 40px;
+		margin-left: 8px;
+		margin-right: 56px;
+	}
+
+	.imgClientes{
+		width: 56px;
+		height: 56px;
+		margin-top: 40px;
+		margin-right: 24px;
+		margin-left: 32px;
+	}
+
+	#imgRadical{
+		width: 56px;
+		height: 56px;
+		margin-top: 40px;
+		margin-right: 16px;
+		margin-left: 56px;
+	}
+
+
+
+}
+
+@media(min-width:397px) and (max-width:768px){
+	#section3{
+		height: 100%;
+		width: 100%;
+		margin-bottom: 16px;
+
+		-webkit-flex-direction: column;  /*direccion del acomodo de las cajas*/
+		-ms-flex-direction: column;
+		flex-direction: column;
+
+		-webkit-justify-content:center; 
+		-ms-flex-pack:center;
+		justify-content: center;
+
+		-webkit-align-items: center; /*alinea los elementos al centro de contenedor*/
+		-ms-flex-align: center; 
+		align-items: center; 
+	}
+
+	.formularios{
+		align-items: center;
+	}
+	.opciones{
+		width: 100%;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.txtOpciones{
+		width: 90%;
+		font-size: 17px;
+
+	}
+	.linesOpciones{
+		width: 90%;
+	}
+	.formContainer{
+		justify-content: center;
+		margin-bottom: 0px;
+	}
+
+	.formularioEmpresa{
+		padding-left: 0px;
+		padding-right: 0px;
+		width: 288px;
+	}
+.formProfesionista{
+	margin-left: 36%;
+	padding-right: 0px;
+	width: 288px;
+	padding-left: 24px;
+}
+	.ulForm{
+		width: 90%;
+	}
+
+	.ulFormSlider{
+		margin-left: -200%;
+	}
+
+
+	#formulario{
+		-webkit-justify-content:center; 
+		-ms-flex-pack:center;
+		justify-content:center;
 		
+		-webkit-align-items: center; /*alinea los elementos al centro de contenedor*/
+		-ms-flex-align: center;
+		align-items: center;
+
+		padding-right: 16px;
+		padding-left: 16px;
+	}
+
+	.label{
+		margin-right: 0px;
+	}
+
+	.input{
+		margin-right: 0px;
+	}
+
+	#btnEnviar{
+		margin-right: 0px;
+	}
+
+	#box2{
+		
+		margin-right: 0px;
+		padding-top: 0px;
 		-webkit-justify-content:center; 
 		-ms-flex-pack:center;
 		justify-content:center;
