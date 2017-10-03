@@ -9,6 +9,7 @@
 	<title>Aori | Cotizador</title>
 
 	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/mobileMenu.css">
 
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
 	<!-- <script src='js/main.js'></script> -->
@@ -20,7 +21,7 @@
 	<!--pdf-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.debug.js"></script>
 	<script src='js/pdfGenerator.js'></script>
-	
+	<script src='js/mobileMenu.js'></script>
 
 	<!--scroll-->
 	<script src="js/smooth-scroll.min.js"></script>
@@ -38,7 +39,7 @@
 
 
 <body>	
-			<div class="sidebar">
+			<!--<div class="sidebar">
 				<h2>MENU</h2>
 				<ul>
 					<li><a href="http://aori.mx/es">Inicio</a></li>
@@ -46,7 +47,7 @@
 					<li><a href="http://aori.mx/es/nosotros">Nosotros</a></li>
 					<li><a href="http://aori.mx/es/contacto">Contacto</a></li>
 				</ul>
-			</div>		
+			</div>-->		
 
 <!--inicio del header-->
 	<header class="headerM">
@@ -56,8 +57,39 @@
 					<a id="logoCont" href="http://aori.mx">
 						<img id="logo" src="imgCotizador/Recursos_programación/LOGO.png">
 					</a>
-					<img src="imgCotizador/Recursos_programación/menu.png" alt="" class="menu-bar">
+					<!--<img src="imgCotizador/Recursos_programación/menu.png" alt="" class="menu-bar">-->
 					<script src="js/menu.js"></script>
+
+					<div class="hmenu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<div class="menuMovil">
+						<ul class="ulMenuMobile">
+							<li>
+								<a href="#">
+									<span>inicio</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>lan</span>
+								</a>
+							</li>
+							
+							<li>
+								<a href="#">
+									<span>lang</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" >
+									<span>CERRAR SESIÓN</span>
+								</a>
+							</li>
+						</ul>
+					</div>
 
 					<!--barra de nav-->
 					<nav id="menu-web">
@@ -109,7 +141,7 @@
 	<!--inicio de la parte superior-->
 	<section id="section1">
 		<div class="beneficios">
-			<img src="imgCotizador/Recursos_programación/iconPersonalizado.png" class="imagenes imgPerYPro">
+			<img src="imgCotizador/img/iconopersonalizado.svg" class="imagenes imgPerYPro">
 			<div class="txtContenedor1y3">	
 				<h1 class="titulo">Personalizado</h1>
 				<p class="txtBeneficios">Con nuestro cotizador podrás seleccionar el producto que más se acomode a tus necesidades.</p>
@@ -122,11 +154,11 @@
 				<h1 class="titulo">Rápido</h1>
 				<p class="txtBeneficios">Esta herramienta te permitirá recibir en tu correo de manera inmediata, lo que hayas señalado en nuestro cotizador. En caso de contratarnos, tendrás pronta respuesta de los avances de tu proyecto y entrega total del mismo.</p>
 			</div>
-			<img src="imgCotizador/Recursos_programación/iconRapido.png" class="imagenes imgRapYBuen orden1">
+			<img src="imgCotizador/img/iconorapido.svg" class="imagenes imgRapYBuen orden1">
 		</div>
 		<hr class="lineBeneficios">
 		<div class="beneficios">
-			<img src="imgCotizador/Recursos_programación/iconProfesional.png" class="imagenes imgPerYPro">
+			<img src="imgCotizador/img/iconoprofesional.svg" class="imagenes imgPerYPro">
 			<div class="txtContenedor1y3">
 				<h1 class="titulo">Profesional</h1>
 				<p class="txtBeneficios">Nuestras soluciones digitales están cuidadosamente diseñadas tomando en cuenta los siguientes elementos de fundamental relevancia: la experiencia de tu usuario o mercado meta, la funcionalidad de tu plataforma digital, la compatibilidad con todos los navegadores, la responsividad para todos los dispositivos (PC, Tablet y Móvil) y la compatibilidad con Google®</p>
@@ -139,7 +171,7 @@
 				<p class="txtBeneficios">Todos los productos que ofrecemos a través de este cotizador, han sido probados, validados y garantizados por AORI Brand Media Consulting ® brindándote en un corto periodo de tiempo una solución digital de primer nivel.</p>
 				<p class="txtBeneficios">¡Costo – Beneficio, somos tu mejor opción!</p>
 			</div>
-			<img src="imgCotizador/Recursos_programación/iconBuenPrecio.png" class="imagenes imgRapYBuen orden1">
+			<img src="imgCotizador/img/iconoprecio.svg" class="imagenes imgRapYBuen orden1">
 		</div>			
 	</section>
 	<!--fin de la parte superior-->
@@ -231,6 +263,7 @@
 								<option>Pagina con blog</option>
 								<option>Tienda en linea</option>
 							</select>
+							<div id="resp"></div>
 
 							<!--<div class="caracteristicas">
 								<label id="labelCarac" for="correo">Características a agregar en la presentación</label>
@@ -256,7 +289,7 @@
 						</form>
 					</li>
 					<li>	
-						<form class="formProfesionista" dataType = 'text' method="POST" contentType = 'application/pdf' action='app/solicitudes/solicitud.php'>
+						<form class="formProfesionista" dataType = 'text' method="POST" contentType = 'application/pdf' action='http://ventas.aori.mx/app/solicitudes/solicitud.php'>
 							<input type="hidden" name="typeUser" value="profesionista">
 							<label class="label" for="nombre">¿Cuál es tu nombre?</label>
 							<input class="input" id="inNombre" type="text" value="" name="nombre" required>
@@ -347,7 +380,6 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src='js/addCaracteristica.js'></script>
 
-	
 
 </body>
 </html>
